@@ -1,7 +1,8 @@
-::root {
+:root {
   --primary-green: rgba(78, 164, 135, 1);
-  --primary-green-transparent:rgba(78, 164, 135, 0.3);
+  --primary-green-transparent: rgba(78, 164, 135, 0.3);
   --primary-gelb: rgba(241, 201, 83, 1);
+  --primary-white: rgba(255, 255, 255, 1);
   --secondary-braun: rgba(84, 55, 13, 1);
   --color-privacy: rgba(185, 16, 47, 1);
 }
