@@ -1,61 +1,65 @@
+/* style.css */
+
+@import url("./variables.css");
+
 * {
-    margin: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 @font-face {
-    font-display: swap;
-    font-family: 'Palanquin';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+  font-display: swap;
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/palanquin-v17-latin-regular.woff2") format("woff2");
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 72px;
 
-    padding: 60px 120px;
+  padding: 60px 120px;
 
-    height: 128px;
+  height: 128px;
 
-    background-color: rgb(78, 164, 135);
+  background-color: var(--primary-green);
 }
 
 .infos {
-    display: flex;
-    gap: 72px;
+  display: flex;
+  gap: 72px;
 
-    font-family: Palanquin;
-    font-size: 0.6rem;
-    color: rgb(255, 255, 255);
+  font-family: Palanquin;
+  font-size: 0.6rem;
+  color: rgb(255, 255, 255);
 }
 
 .infos a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 .copyright img {
-    height: 24px;
-    width: 24px;
+  height: 24px;
+  width: 24px;
 }
 
 .social-media {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }

@@ -1,4 +1,9 @@
 /* Header, Footer, Container, Grid/Flexbox-Layout, Headlines, Links */
+/* style.css */
+
+@import url("./variables.css");
+
+
 *{
   margin: 0;
   padding: 0;
