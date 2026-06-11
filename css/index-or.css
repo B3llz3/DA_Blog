@@ -13,3 +13,7 @@ h2 {
 main {
     padding: 40px 120px;
 }
+.headcontent {
+    display: flex;
+    flex-direction: column;
+}
