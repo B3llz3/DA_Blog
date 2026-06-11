@@ -17,3 +17,13 @@ main {
     display: flex;
     flex-direction: column;
 }
+.headline {
+    display: flex;
+    flex-direction: column;
+}
+.headline-cards {
+    display: flex;
+}
+.headline-card {
+    display: flex;
+}
