@@ -15,7 +15,7 @@ html {
   font-family: "Arima";
   font-style: normal;
   font-weight: 700;
-  src: url("./assets/fonts/arima-v7-latin-700.woff2") format("woff2");
+  src: url("../assets/fonts/arima-v7-latin-700.woff2") format("woff2");
 }
 
 .header {
@@ -52,7 +52,6 @@ html {
   text-decoration: none;
 
   font-family: Arima;
-  font-weight: 700;
   color: var(--primary-white);
 }
 
@@ -68,7 +67,7 @@ html {
   width: 112%;
   height: 100%;
 
-  background-image: url(./assets/icons/highlights_underline.svg);
+  background-image: url(../assets/icons/highlights_underline.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -94,7 +93,7 @@ html {
   width: 125%;
   height: 100%;
 
-  background-image: url(./assets/icons/faq_underline.svg);
+  background-image: url(../assets/icons/faq_underline.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -120,7 +119,7 @@ html {
   width: 112%;
   height: 100%;
 
-  background-image: url(./assets/icons/contact_underline.svg);
+  background-image: url(../assets/icons/contact_underline.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
