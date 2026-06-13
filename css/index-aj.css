@@ -2,14 +2,21 @@
 @import url("./components.css");
 @import url("./layout.css");
 
-h1{
+h1 {
     color: var(--primary-gelb);
+    font-size: 64px;
 }
 
-h2{
+h2 {
     color: var(--primary-green);
+    font-size: 40px;
 }
 
-h3{
+h3 {
     color: var(--secondary-braun);
+}
+
+.top {
+ padding: 80px 122px 88px 118px; 
+ 
 }
