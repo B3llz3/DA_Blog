@@ -6,6 +6,7 @@ h1 {
     color: var(--primary-gelb);
     font-size: 64px;
     font-family: 'Arima';
+    line-height: 120%;
 }
 
 h2 {
@@ -20,6 +21,42 @@ h3 {
 }
 
 .headline {
- padding: 80px 122px 88px 118px; 
- 
+    padding: 80px 122px 88px 118px;
+    display: flex;
+    flex-direction: row;
+}
+
+.headline h3 {
+    font-family: 'Palanquin';
+    font-size: 28px;
+    line-height: 110%;
+    padding-bottom: 40px;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 330px;
+    font-size: 16px;
+}
+
+.icon {
+    display: flex;
+    gap: 6px;
+}
+
+.icon>img {
+    width: 16px;
+}
+
+.author{
+    background-color: var(--background-green);
+}
+
+.author img {
+    width: 120px;
+    border-radius: 50%;
+
 }
