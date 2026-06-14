@@ -54,7 +54,7 @@ p {
   font-size: 400;
   font-size: 16px;
   color: var(--secondary-braun);
-  /* line-height: 1.2; */
+  line-height: 120%;
 }
 
 main {
