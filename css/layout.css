@@ -56,7 +56,7 @@ p {
   color: var(--secondary-braun);
 }
 
-.headline-info {
+.headline-info .text-section {
   width: min(100%, 1440px);
   margin: 0 auto;
   margin-bottom: 128px;

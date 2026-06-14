@@ -1,7 +1,7 @@
 @import url("./variables.css");
 
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -12,7 +12,7 @@
   margin-top: 128px;
 }
 
-.headline-info--wrapper__text{
+.headline-info--wrapper__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,12 +50,90 @@
   width: 120px;
 }
 
-.carousel-section{
+.carousel-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 128px;
+}
+
+.carousel-section h2 {
+  margin: 64px;
+}
+
+.text-black {
+  font-family: "Palanquin";
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--primary-black-text);
+}
+
+.text-section--detail {
+  margin-top: 64px;
+  margin-left: 128px;
+  margin-right: 128px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.carousel-section h2{
-  margin: 64px;
+.text-section--detail ol {
+  margin-top: 24px;
+}
+
+ol {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+}
+span {
+  font-family: "Palanquin";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.protip-box {
+  position: relative;
+  border-radius: 30px;
+  background-color: var(--primary-green-transparent);
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: 128px;
+  margin-right: 64px;
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+.protip-box a{
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+.protip-label {
+  position: absolute;
+  top: -45px;
+  left: -35px;
+  background-color: var(--primary-green);
+  color: var(--primary-gelb);
+  padding: 14px 24px;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 10px;
+  transform: rotate(-13.67deg);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 8px;
+}
+
+.protip-label img{
+  height: 50px;
+  width: 50px;
+  transform: rotate(13.67deg);
+}
+
+.text-section--final-text{
+  margin-bottom: 128px;
 }
