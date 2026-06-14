@@ -7,6 +7,10 @@
     line-height: 120%;
 }
 
+p {
+    color: var(--primary-black-text)
+}
+
 h1 {
     color: var(--primary-gelb);
     font-size: 64px;
@@ -121,11 +125,69 @@ h3 {
 
 }
 
+.rain-diagram {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 118px 0px 118px;
+}
 
+.rain-diagram h3 {
+    padding-bottom: 24px;
+}
 
+.rain-diagram img {
+    padding-bottom: 88px;
+}
 
+.rain-diagram p {
+    padding-bottom: 88px;
+    font-size: 24px;
+}
 
+.comp-diagram {
+    padding: 0px 118px 88px 118px;
+}
 
+.diagrams {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 41px 88px 41px;
+    justify-content: space-between;
+}
+
+.comp-diagram img {
+    width: 519px;
+}
+
+.activities {
+    height: 727px;
+    width: 519px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.expenses {
+    width: 519px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.comp-diagram p {
+    font-size: 24px;
+}
+
+.follow {
+    padding: 0px 490.5px 80px 486.5px
+}
+
+.follow h3 {
+    font-size: 24px;
+    text-align: center;
+}
 
 @media screen and (min-width: 1441px) {
 
