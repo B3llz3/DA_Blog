@@ -1,2 +1,61 @@
 @import url("./variables.css");
 
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.headline-info--wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 128px;
+}
+
+.headline-info--wrapper__text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.headline-info--wrapper__statisticsoverview {
+  display: flex;
+  justify-content: start;
+  gap: 32px;
+  align-items: end;
+  margin-top: 32px;
+}
+
+.headline-info--wrapper__statistic {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 6px;
+}
+
+.author-card {
+  background-color: var(--primary-green-transparent);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 16px;
+  padding: 16px;
+  width: 600px;
+}
+
+.author-card img {
+  height: 120px;
+  width: 120px;
+}
+
+.carousel-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-section h2{
+  margin: 64px;
+}
