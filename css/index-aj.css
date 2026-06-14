@@ -1,12 +1,16 @@
 @import url("./variables.css");
 @import url("./components.css");
 @import url("./layout.css");
+@import url("./font.css");
+
+ *{
+    line-height: 120%;
+ }
 
 h1 {
     color: var(--primary-gelb);
     font-size: 64px;
     font-family: 'Arima';
-    line-height: 120%;
 }
 
 h2 {
@@ -24,6 +28,8 @@ h3 {
     padding: 80px 122px 88px 118px;
     display: flex;
     flex-direction: row;
+    gap: 26px;
+
 }
 
 .headline h3 {
@@ -31,6 +37,7 @@ h3 {
     font-size: 28px;
     line-height: 110%;
     padding-bottom: 40px;
+    text-align: justify;
 
 }
 
@@ -45,17 +52,59 @@ h3 {
 .icon {
     display: flex;
     gap: 6px;
+    font-size: 16px;
+    font-family: 'Palanquin';
+    color: var(--secondary-braun);
 }
 
 .icon>img {
     width: 16px;
 }
 
+.lang>img {
+    width: 20px;
+}
+
 .author{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 272px;
     background-color: var(--background-green);
+    border-radius: 30px;
+    
+}
+
+.author h3{
+    padding: 0px;
+    font-family: 'Arima';
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.author h4{
+    
+    font-size: 18px;
+    font-family: 'Arima';
+    font-weight: 400;
+    text-align: center;
+    color: var(--secondary-braun);
+}
+
+.author p{
+    font-family: 'Palanquin';
+    font-size: 16px;
+    color: var(--secondary-braun);
+}
+
+.author-text{
+    padding: 16px;
 }
 
 .author img {
+    padding: 16px 0px 16px 0px ;
     width: 120px;
     border-radius: 50%;
 
