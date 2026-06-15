@@ -52,8 +52,8 @@ h5 {
 p {
   font-family: "Palanquin";
   font-size: 400;
-  font-size: 16px;
-  color: var(--secondary-braun);
+  font-size: 24px;
+  color: var(--primary-black-text);
   line-height: 120%;
 }
 
@@ -61,6 +61,12 @@ main {
   width: min(100%, 1440px);
   margin: 0 auto;
   margin-bottom: 128px;
+}
+
+.author p {
+  font-family: 'Palanquin';
+  font-size: 16px;
+  color: var(--secondary-braun);
 }
 
 .header {
