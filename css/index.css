@@ -1,4 +1,20 @@
 /*contact form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-text-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
 .input {
     width: 100%;
 }
