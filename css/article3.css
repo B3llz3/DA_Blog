@@ -7,10 +7,6 @@
     line-height: 120%;
 }
 
-p {
-    color: var(--primary-black-text)
-}
-
 h1 {
     color: var(--primary-gelb);
     font-size: 64px;
@@ -30,12 +26,6 @@ h3 {
 
 .landing-section {
     padding: 80px 122px 80px 118px;
-}
-
-.landing-section p {
-    color: rgba(61, 61, 61, 1);
-    font-size: 24px;
-    font-family: 'Palanquin'
 }
 
 .headline {
@@ -105,12 +95,6 @@ h3 {
     font-family: 'Arima';
     font-weight: 400;
     text-align: center;
-    color: var(--secondary-braun);
-}
-
-.author p {
-    font-family: 'Palanquin';
-    font-size: 16px;
     color: var(--secondary-braun);
 }
 
