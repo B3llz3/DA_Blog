@@ -1,20 +1,44 @@
 /*contact form */
+form {
+    width: 100%;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    padding: 120px 50px;
 }
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .contact-text-headline {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 10px;
 }
+
 .form-row {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
+
+.form-group {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .input {
     width: 100%;
 }
