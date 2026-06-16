@@ -1,5 +1,47 @@
 /* Buttons, Cards, Navigation, Formulars */
 
+/*Author Card*/
+.author {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 272px;
+  background-color: var(--background-green);
+  border-radius: 30px;
+  padding: 16px 0px 16px 0px;
+}
+
+.author h3 {
+  padding: 0px;
+  font-family: 'Arima';
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--secondary-braun);
+}
+
+.author h4 {
+  font-size: 18px;
+  font-family: 'Arima';
+  font-weight: 400;
+  text-align: center;
+  color: var(--secondary-braun);
+}
+
+.author-text {
+  padding: 16px;
+}
+
+.author img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+
+}
+
 /* Carousel article1*/
 .carousel {
   display: flex;
