@@ -1,73 +1,160 @@
+/* FAQ */
+.faq--headline {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 8px;
+}
+
+.faq--headline img {
+  width: 48px;
+  height: 48px;
+}
+.faq--headline h2 {
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 100%;
+  padding-top: 4px;
+  margin-bottom: 48px;
+}
+
+.faq-section {
+  margin-top: 120px;
+}
+
+.faq--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faq--details {
+  background-color: var(--primary-gelb);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 14px;
+  /* Das gesamte Element ignoriert Klicks */
+  pointer-events: none;
+  /* verhindert Textmarkierung, da pointer-event: none */
+  user-select: none;
+}
+
+.faq--question {
+  font-family: "Palanquin";
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--secondary-braun);
+}
+
+.faq--trigger {
+  /* dieser Bereich reagiert wieder auf Klicks */
+  pointer-events: auto;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: transform 500ms;
+}
+
+/* Rotation des Pfeils, wenn das Element geöffnet ist */
+details[open] .faq--trigger {
+  transform: rotate(-180deg);
+}
+
+.faq--content {
+  border-left: 14px solid var(--primary-gelb);
+  border-right: 14px solid var(--primary-gelb);
+  border-bottom: 16px solid var(--primary-gelb);
+  background-color: var(--primary-gelb);
+}
+.faq-content__text {
+  padding: 4px 10px;
+  border-radius: 16px;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: "Palanquin";
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--secondary-braun);
+}
+
 /*contact form */
 form {
-    display: block;
-    width: 100%;
-    padding-top: 60px;
+  display: block;
+  width: 100%;
+  padding-top: 60px;
 }
 
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    padding: 120px 50px;
+  padding: 120px 50px;
 }
 
 .contact-text {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-    padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+  padding: 0 60px;
 }
 
 .contact-text-headline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    gap: 10px;
+  gap: 10px;
 }
 
 .form-row {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .form-group {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-input[type=text] {
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid rgba(84, 55, 13, 1);
+input[type="text"] {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(84, 55, 13, 1);
 }
 
-input[type=submit] {
-    width: 140px;
-    height: 50px;
-    border: 1px solid rgba(48, 48, 48, 0.5);
-    color: rgba(115, 115, 115, 1);
-    font-family: 'Arima';
-    font-size: 24px;
-    font-weight: 700;
-    padding: 14px;
-    margin: 8px 0;
-    border-radius: 40px;
-    cursor: pointer;
+input[type="submit"] {
+  width: 140px;
+  height: 50px;
+  border: 1px solid rgba(48, 48, 48, 0.5);
+  color: rgba(115, 115, 115, 1);
+  font-family: "Arima";
+  font-size: 24px;
+  font-weight: 700;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 40px;
+  cursor: pointer;
 }
 
-form:has(#policy:checked) input[type=submit] {
-    background-color: rgba(78, 164, 135, 1);
-    color: rgba(241, 201, 83, 1);
+form:has(#policy:checked) input[type="submit"] {
+  background-color: rgba(78, 164, 135, 1);
+  color: rgba(241, 201, 83, 1);
 }
 
-input[type=submit]:hover {
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+input[type="submit"]:hover {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
 }
