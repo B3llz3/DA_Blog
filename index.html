@@ -1,73 +1,205 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LandingPage</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LandingPage</title>
-  <link rel="stylesheet" href="./css/index.css" />
-  <link rel="stylesheet" href="./css/components.css" />
-  <link rel="stylesheet" href="./css/layout.css" />
-  <link rel="stylesheet" href="./css/variables.css" />
-  <link rel="stylesheet" href="./css/font.css" />
-</head>
-
-<body>
-  <header></header>
-  <main>
-    <!-- Daniel -->
-    <section class="hero-section"></section>
-    <!-- Alexander -->
-    <section class="highlights"></section>
-    <!-- Steffen -->
-    <section class="faq"></section>
-    <!-- Oliver -->
-    <section class="contact-form">
-      <div class="contact-text">
-        <div class="contact-text-headline">
-          <img src="./assets/icons/person_pin.svg" alt="bild">
-          <h2>Contact form</h2>
+  <body>
+    <header class="header">
+      <a href=""
+        ><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"
+      /></a>
+      <nav class="navbar">
+        <ul>
+          <li class="highlights-link">
+            <a href="">Highlights</a>
+          </li>
+          <li class="faq-link">
+            <a href="">FAQ</a>
+          </li>
+          <li class="contact-link">
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Daniel -->
+      <section class="hero-section"></section>
+      <!-- Alexander -->
+      <section class="highlights"></section>
+      <!-- Steffen -->
+      <section class="faq-section">
+        <div class="faq--headline">
+          <img src="./assets/icons/faq-logo.svg" alt="" />
+          <h2>FAQ</h2>
         </div>
-        <p>Have a question or an idea to collaborate?<br>
-          Get in touch—I’d love to hear from you and explore how we can work together.</p>
+        <div class="faq--wrapper">
+          <!-- 1st FAQ -->
+          <details class="faq--details">
+            <summary>
+              <span class="faq--question">Wie kam ich zu meinem Reise-Blog?</span>
+              <span class="faq--trigger">
+                <img src="./assets/icons/faq_arrow.svg" alt="Ausklapppfeil" />
+              </span>
+            </summary>
+            <div class="faq--content">
+              <div class="faq-content__text">
+                Die Idee für meinen Reiseblog entstand aus meiner Leidenschaft,
+                neue Orte zu entdecken und besondere Momente festzuhalten. Nach
+                mehreren Reisen wurde mir bewusst, wie viele wertvolle
+                Erfahrungen, Tipps und Eindrücke ich gesammelt hatte. Anstatt
+                diese Erinnerungen nur für mich zu behalten, wollte ich sie mit
+                anderen teilen und Menschen bei der Planung ihrer eigenen
+                Abenteuer inspirieren. So entstand dieser Reiseblog – ein Ort, an
+                dem ich meine Erlebnisse, Empfehlungen und schönsten Reiseziele
+                vorstelle. Mein Ziel ist es, authentische Einblicke zu geben und
+                die Freude am Reisen mit anderen zu teilen.
+              </div>
+            </div>
+          </details>
+          <!-- 2nd FAQ -->
+          <details class="faq--details">
+            <summary>
+              <span class="faq--question"
+                >Wie plane, dokumentiere und teile ich meine Reisen?</span
+              >
+              <span class="faq--trigger">
+                <img src="./assets/icons/faq_arrow.svg" alt="Ausklapppfeil" />
+              </span>
+            </summary>
+            <div class="faq--content">
+              <div class="faq-content__text">
+                Meine Reisen plane ich meist mit einer Mischung aus Google Maps für Orte und
+                Notion für die Logistik. Während der Reise dokumentiere ich alles in einem
+                digitalen Tagebuch und halte die wichtigsten Momente mit meiner Kamera fest.
+                Nach meiner Rückkehr sortiere ich die Erlebnisse, bearbeite die Fotos und
+                erstelle daraus die detaillierten Guides, die du hier auf dem Blog sowie in
+                kurzen Updates auf Social Media findest. Mein Ziel ist es dabei immer, nicht
+                nur schöne Bilder zu zeigen, sondern echte, hilfreiche Tipps für deine eigene
+                Planung zu liefern.
+              </div>
+            </div>
+          </details>
+          <!-- 3rd FAQ -->
+          <details class="faq--details">
+            <summary>
+              <span class="faq--question"
+                >Wie können Marken, Unternehmen oder andere Creator mit mir zusammenarbeiten oder Kontakt aufnehmen?</span
+              >
+              <span class="faq--trigger">
+                <img src="./assets/icons/faq_arrow.svg" alt="Ausklapppfeil" />
+              </span>
+            </summary>
+            <div class="faq--content">
+              <div class="faq-content__text">
+                Für eine Zusammenarbeit oder Presseanfragen bin ich jederzeit offen! Marken,
+                Unternehmen und Creator können mir am besten eine E-Mail an [Deine
+                E-Mail-Adresse] senden. Ob für Kooperationen, Content-Erstellung oder
+                Gastbeiträge – schreibt mir einfach kurz, worum es geht und was ihr euch
+                vorstellt. Ich freue mich darauf, gemeinsam spannende Projekte umzusetzen und
+                sende euch bei Interesse gerne mein Media Kit zu. Let’s connect!
+              </div>
+            </div>
+          </details>
+          <!-- 4th FAQ -->
+          <details class="faq--details">
+            <summary>
+              <span class="faq--question"
+                >Wie können Leser diesen Blog und die Arbeit dahinter unterstützen?</span
+              >
+              <span class="faq--trigger">
+                <img src="./assets/icons/faq_arrow.svg" alt="Ausklapppfeil" />
+              </span>
+            </summary>
+            <div class="faq--content">
+              <div class="faq-content__text">
+                Es freut uns riesig, dass du fragst! Du kannst unsere Arbeit auf verschiedene
+                Weise unterstützen: Am einfachsten hilft es uns, wenn du unsere Beiträge mit
+                Freunden teilst, uns auf Social Media folgst oder uns einen netten Kommentar
+                hinterlässt. Wenn du über unsere Empfehlungs-Links (Affiliate) Unterkünfte
+                oder Equipment buchst, erhalten wir zudem eine kleine Provision, ohne dass es
+                für dich einen Cent mehr kostet. Jede Form der Unterstützung hilft uns dabei,
+                auch weiterhin kostenlose Reiseführer und Tipps für dich zu erstellen. Vielen
+                Dank!
+              </div>
+            </div>
+          </details>
+        <div>
+      </section>
+      <!-- Oliver -->
+      <section class="contact-form">
+        <div class="contact-text">
+          <div class="contact-text-headline">
+            <img src="./assets/icons/person_pin.svg" alt="bild" />
+            <h2>Contact form</h2>
+          </div>
+          <p>
+            Have a question or an idea to collaborate?<br />
+            Get in touch—I’d love to hear from you and explore how we can work
+            together.
+          </p>
+        </div>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">What's your Name?</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">What's your email?</label>
+              <input type="text" id="email" name="email" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="help">How can I help?</label>
+              <input type="text" id="help" name="help" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="checkbox" id="policy" name="policy" value="policy" />
+              <label for="policy">
+                I've read the privacy policy and agree to the processing of my
+                data as outlined</label
+              >
+              <input type="submit" value="Send" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="infos">
+        <div class="copyright">
+          <img src="./assets/icons/copyright_icon.svg" alt="Copyright Icon" />
+          <p>Travel Blog 2026</p>
+        </div>
+        <a href="">Imprint</a>
+        <a href="">Cookie Preferences</a>
       </div>
-      <form>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">What's your Name?</label>
-            <input type="text" id="name" name="name">
-
-          </div>
-          <div class="form-group">
-            <label for="email">What's your email?</label>
-            <input type="text" id="email" name="email">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="help">How can I help?</label>
-            <input type="text" id="help" name="help">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <input type="checkbox" id="policy" name="policy" value="policy">
-            <label for="policy"> I've read the privacy policy and agree to the processing of my data as outlined</label>
-            <input type="submit" value="Send">
-          </div>
-        </div>
-      </form>
-    </section>
-  </main>
-  <footer></footer>
-</body>
-
+      <div class="social-media">
+        <a href="https://www.tiktok.com/"
+          ><img src="./assets/icons/tiktok_icon.svg" alt="Tik Tok Icon"
+        /></a>
+        <a href="https://www.youtube.com/"
+          ><img src="./assets/icons/youtube_icon.svg" alt="YouTube Icon"
+        /></a>
+        <a href="https://www.facebook.com/?locale=de_DE"
+          ><img src="./assets/icons/facebook_icon.svg" alt="Facebook Icon"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="./assets/icons/instagram_icon.svg" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
 </html>
-
-<details>
-  <summary>Update News:</summary>
-  <p>
-    Das details-Element ermöglicht es, ganz ohne den Einsatz von JavaScript,
-    ursprünglich verborgene Textinhalte aufzuklappen.
-  </p>
-</details>
