@@ -151,15 +151,26 @@ label {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 500;
-    padding: 40px;
+    padding: 53px 0;
+}
+span {
+    color: rgba(78, 164, 135, 1);
+    padding: 0 8px;
 }
 
 input[type="text"] {
     width: 100%;
+      padding: 12px;
+  margin: 8px 0;
     border: none;
     border-bottom: 2px solid rgba(84, 55, 13, 1);
+    box-sizing: border-box;
     display: flex;
     gap: 65px;
+
+    font-size: 24px;
+    font-family: 'Palaquin';
+    color: rgba(84, 55, 13, 1);;
 }
 input[type="checkbox"] {
     width: 24px;
@@ -178,6 +189,8 @@ input[type="submit"] {
     border-radius: 40px;
     cursor: pointer;
     text-align: center;
+    display: flex;
+    align-self: center;
 }
 
 form:has(#policy:checked) input[type="submit"] {
