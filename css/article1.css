@@ -33,7 +33,7 @@
   gap: 6px;
 }
 
-.author-card {
+.author {
   background-color: var(--primary-green-transparent);
   border-radius: 30px;
   display: flex;
@@ -45,7 +45,7 @@
   width: 600px;
 }
 
-.author-card img {
+.author img {
   height: 120px;
   width: 120px;
 }

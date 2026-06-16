@@ -47,6 +47,7 @@ h5 {
   font-weight: 400;
   font-size: 18px;
   color: var(--secondary-braun);
+  text-align: center;
 }
 
 p {
@@ -64,7 +65,7 @@ main {
 }
 
 .author p {
-  font-family: 'Palanquin';
+  font-family: "Palanquin";
   font-size: 16px;
   color: var(--secondary-braun);
 }
@@ -187,7 +188,6 @@ main {
   opacity: 1;
   transform: scaleX(1) rotate(1deg);
 }
-
 
 .footer {
   display: flex;
