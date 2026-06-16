@@ -128,6 +128,10 @@ form {
     text-align: center;
 }
 
+.contact-text-headline>h2>br {
+    display: none;
+}
+
 .contact-text-headline img {
     width: 48px;
     height: 48px;
@@ -160,6 +164,7 @@ span {
     color: rgba(78, 164, 135, 1);
     padding: 0 8px;
 }
+
 .form-row-checkbox {
     width: 100%;
     display: flex;
@@ -212,4 +217,75 @@ form:has(#policy:checked) input[type="submit"] {
 
 form:has(#policy:checked) input[type="submit"]:hover {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .contact-form {
+        padding: 80px 20px;
+    }
+
+    .contact-text>h2 {
+        font-size: 40px;
+    }
+
+    .contact-text-headline>h2>br {
+        display: inherit;
+    }
+
+    .contact-text>p {
+        font-size: 24px;
+        display: none;
+    }
+
+    .contact-text-headline img {
+        width: 40px;
+        height: 40px;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row-checkbox>label {
+        font-size: 15px;
+    }
+
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .contact-form {
+        padding: 80px 20px;
+    }
+
+    .contact-text>h2 {
+        font-size: 40px;
+    }
+
+    .contact-text>p {
+        font-size: 24px;
+    }
+
+    .contact-text-headline img {
+        width: 40px;
+        height: 40px;
+    }
+
+    form {
+        padding: 0;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row-checkbox>label {
+        font-size: 24px;
+    }
+
 }
