@@ -127,6 +127,7 @@ form {
     padding-top: 4px;
     text-align: center;
 }
+
 .contact-text-headline img {
     width: 48px;
     height: 48px;
@@ -146,22 +147,31 @@ form {
     flex-direction: column;
     justify-content: center;
 }
+
 label {
     color: rgba(84, 55, 13, 1);
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 500;
-    padding: 53px 0;
+    padding: 45px 0;
 }
+
 span {
     color: rgba(78, 164, 135, 1);
     padding: 0 8px;
 }
+.form-row-checkbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
 
 input[type="text"] {
     width: 100%;
-      padding: 12px;
-  margin: 8px 0;
+    padding: 12px;
+    margin: 8px 0;
     border: none;
     border-bottom: 2px solid rgba(84, 55, 13, 1);
     box-sizing: border-box;
@@ -170,8 +180,10 @@ input[type="text"] {
 
     font-size: 24px;
     font-family: 'Palaquin';
-    color: rgba(84, 55, 13, 1);;
+    color: rgba(84, 55, 13, 1);
+    ;
 }
+
 input[type="checkbox"] {
     width: 24px;
     height: 24px;
@@ -198,6 +210,6 @@ form:has(#policy:checked) input[type="submit"] {
     color: rgba(241, 201, 83, 1);
 }
 
-input[type="submit"]:hover {
+form:has(#policy:checked) input[type="submit"]:hover {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
 }
