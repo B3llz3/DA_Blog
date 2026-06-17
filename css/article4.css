@@ -67,3 +67,34 @@ main {
     height: 520px;
     width: 930px;
 }
+
+.carousel-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 128px;
+}
+
+.carousel-section h2 {
+    margin: 64px;
+}
+
+.fuji_img1 {
+    background-image: url("../assets/images/article4/fuji-01.jpg");
+}
+
+.fuji_img2 {
+    background-image: url("../assets/images/article4/fuji-02.jpg");
+}
+
+.fuji_img3 {
+    background-image: url("../assets/images/article4/fuji-03.jpg");
+}
+
+.fuji_img4 {
+    background-image: url("../assets/images/article4/fuji-04.jpg");
+}
+
+.fuji_img5 {
+    background-image: url("../assets/images/article4/fuji-05.jpg");
+}
