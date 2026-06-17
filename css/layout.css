@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  line-height: 120%;
   scroll-behavior: smooth;
 }
 
@@ -21,23 +21,18 @@ h1 {
 }
 
 h2 {
-  font-family: "Arima";
-  font-size: 32px;
+  font-family: 'Palanquin';
+  font-size: 40px;
   font-weight: 600;
-  color: var(--secondary-braun);
-}
-
-.headline-info h2 {
-  font-weight: 400;
+  color: var(--primary-green);
 }
 
 h3 {
-  font-family: "Palanquin";
-  font-weight: 600;
-  font-size: 40px;
-  color: var(--primary-green);
-
-  line-height: 120%;
+  font-family: 'Palanquin';
+  font-weight: 400;
+  font-size: 28px;
+  color: var(--secondary-braun);
+  line-height: 110%;
 }
 
 h4 {
@@ -59,20 +54,46 @@ p {
   font-family: "Palanquin";
   font-size: 24px;
   color: var(--primary-black-text);
-  line-height: 120%;
 }
 
 main {
   width: min(100%, 1440px);
   margin: 0 auto;
-  margin-bottom: 128px;
 }
 
-.author p {
-  font-family: "Palanquin";
-  font-size: 16px;
-  color: var(--secondary-braun);
+.landing-section {
+  padding: 80px 122px 80px 118px;
 }
+
+.icon {
+  display: flex;
+  padding-top: 40px;
+  gap: 6px;
+  font-family: 'Palanquin';
+  color: var(--secondary-braun);
+  height: 100%;
+}
+
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 330px;
+  font-size: 16px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  padding-bottom: 48px;
+
+}
+
+.headline-info h2 {
+  font-weight: 400;
+}
+
 
 .header {
   display: flex;
