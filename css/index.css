@@ -239,7 +239,20 @@ form:has(#policy:checked) input[type="submit"]:hover {
     inset: 0;
     opacity: 0;
     transition: 0.4s;
+    pointer-events: none;
 }
+
+.slide a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    }
+
+    .slide a img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
 .text-box {
     position: absolute;
@@ -273,6 +286,7 @@ form:has(#policy:checked) input[type="submit"]:hover {
     bottom: 28px;
     display: flex;
     gap: 22px;
+    z-index: 5;
 
 }
 
@@ -333,6 +347,8 @@ form:has(#policy:checked) input[type="submit"]:hover {
 #slide3:checked~.slides .s3,
 #slide4:checked~.slides .s4 {
     opacity: 1;
+    pointer-events: auto;
+    z-index: 2;
 }
 
 
