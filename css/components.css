@@ -105,6 +105,56 @@
   background-image: url("../assets/images/article1/carousel5.jpg");
 }
 
+/* Pro Tipps Box */
+.protip-box {
+  position: relative;
+  border-radius: 30px;
+  background-color: var(--primary-green-transparent);
+  padding-top: 42px;
+  padding-bottom: 32px;
+  padding-left: 50px;
+  padding-right: 16px;
+  margin-left: 128px;
+  margin-right: 64px;
+  margin-top: 128px;
+  margin-bottom: 128px;
+}
+
+.protip-box li {
+  font-family: "Palanquin";
+  font-size: 24px;
+  color: var(--primary-black-text);
+  line-height: 120%;
+}
+
+.protip-box a {
+  color: var(--primary-green);
+  text-decoration: none;
+}
+
+.protip-label {
+  position: absolute;
+  top: -45px;
+  left: -35px;
+  background-color: var(--primary-green);
+  color: var(--primary-gelb);
+  padding: 14px 24px;
+  font-size: 28px;
+  font-weight: 700;
+  border-radius: 10px;
+  transform: rotate(-13.67deg);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 8px;
+}
+
+.protip-label img {
+  height: 50px;
+  width: 50px;
+  transform: rotate(13.67deg);
+}
+
 /* sticky-footbar */
 .sticky-footbar {
   position: sticky;
