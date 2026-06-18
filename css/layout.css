@@ -28,18 +28,18 @@ h2 {
 }
 
 h3 {
+  font-family: "Arima";
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--secondary-braun);
+  }
+
+h4 {
   font-family: 'Palanquin';
   font-weight: 400;
   font-size: 28px;
   color: var(--secondary-braun);
   line-height: 110%;
-}
-
-h4 {
-  font-family: "Arima";
-  font-weight: 700;
-  font-size: 18px;
-  color: var(--secondary-braun);
 }
 
 h5 {
@@ -57,12 +57,12 @@ p {
 }
 
 main {
-  width: min(100%, 1440px);
+  width: min(100%, 1200px);
   margin: 0 auto;
 }
 
 .landing-section {
-  padding: 80px 122px 80px 118px;
+  padding: 80px 0px 80px 0px;
 }
 
 .icon {
@@ -99,8 +99,7 @@ main {
   align-items: center;
   gap: 72px;
 
-  padding: 0px 120px;
-
+  
   width: 100%;
   height: 128px;
 
@@ -253,7 +252,7 @@ main {
 
 .copyright {
   display: flex;
-  justify-content: center;
+  justify-content: centser;
   align-items: center;
   gap: 4px;
 }
