@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mt.Fuji</title>
 
+    <link rel="icon" type="image/x-icon" href="./assets/icons/travelblog-logo.svg">
     <link rel="stylesheet" href="./css/article4.css" />
     <link rel="stylesheet" href="./css/components.css" />
     <link rel="stylesheet" href="./css/layout.css" />
@@ -15,64 +16,84 @@
 
 <body>
     <header class="header">
-        <a href=""><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"></a>
         <nav class="navbar">
             <ul>
+                <li>
+                    <a href="index.html#hero"><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"></a>
+                </li>
                 <li class="highlights-link">
-                    <a href="#">Highlights</a>
+                    <a href="index.html#highlights">Highlights</a>
                 </li>
                 <li class="faq-link">
-                    <a href="#">FAQ</a>
+                    <a href="index.html#faq-section">FAQ</a>
                 </li>
                 <li class="contact-link">
-                    <a href="#">Contact</a>
+                    <a href="index.html#contact-form">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <div class="headcontent">
+        <section class="landing-section">
             <div class="headline">
-                <h3>Ein fantastisches fernöstliches Erlebnis</h3>
-                <h1>Mt. Fuji aus verschiedenen Perspektiven</h1>
-                <p>Entdecken Sie die faszinierende Landschaft rund um den Fujiyama, zwischen traditionellem Lebensstil
-                    und
-                    futuristischen Städten. Erleben sie das Herz Japans in allen Facetten.</p>
-                <div class="datacards-wrapper">
-                    <div class="datacard"><img src="./assets/icons/calendar_icon.svg" alt="Kalender Icon">
-                        <p>Datum: 13.06.2026</p>
-                    </div>
-                    <div class="datacard"><img src="./assets/icons/glasses_icon.svg" alt="Brille Icon">
-                        <p>Lesezeit: 7min.</p>
-                    </div>
-                    <div class="datacard"><img src="./assets/icons/eye_icon.svg" alt="Auge Icon">
-                        <p>Gelesen: 142</p>
-                    </div>
-                    <div class="datacard"><img src="./assets/icons/share_green_icon.svg" alt="Teilen Icon">
-                        <p>Geteilt: 13</p>
+                <div>
+                    <h2>Ein fantastisches fernöstliches Erlebnis</h2>
+
+                    <h1>
+                        Mt. Fuji aus verschiedenen Perspektiven
+                    </h1>
+
+                    <h3>
+                        Entdecken Sie die faszinierende Landschaft rund um den Fujiyama, zwischen traditionellem
+                        Lebensstil
+                        und
+                        futuristischen Städten. Erleben sie das Herz Japans in allen Facetten.
+                    </h3>
+
+                    <div class="info">
+                        <div class="icon">
+                            <img src="./assets/icons/calendar_icon.svg" alt="Kalender Icon">
+                            <span>Datum: 13.06.2026</span>
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/icons/glasses_icon.svg" alt="Brille Icon">
+                            <span>Lesezeit: 7min.</span>
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/icons/eye_icon.svg" alt="Auge Icon">
+                            <span>Gelesen: 142</span>
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/icons/share_green_icon.svg" alt="Teilen Icon">
+                            <span>Geteilt: 13</span>
+                        </div>
                     </div>
                 </div>
+
+                <aside class="author">
+                    <img src="./assets/images/article4/author_daniel_gust.jpg" alt="Daniel Gust Porträt">
+                    <div class="author-text">
+                        <h3>Daniel Gust</h3>
+                        <h4>Author</h4>
+
+                        <p>
+                            Lieber Erfahrungen als Materielles sammeln und mit meinen Lieben die Welt erkunden. Spaß am
+                            Anblick
+                            der Natur und am Kennenlernen verschiedener Kulturen. Kulinarisches Neuland entdecken und
+                            unterhaltsame Momente teilen.
+                        </p>
+                    </div>
+                </aside>
             </div>
-            <aside class="author">
-                <img src="./assets/images/article4/author_daniel_gust.jpg" alt="Daniel Gust Porträt">
-                <div class="author-text">
-                    <h3>Daniel Gust</h3>
-                    <h4>Author</h4>
 
-                    <p>
-                        Lieber Erfahrungen als Materielles sammeln und mit meinen Lieben die Welt erkunden. Spaß am
-                        Anblick
-                        der Natur und am Kennenlernen verschiedener Kulturen. Kulinarisches Neuland entdecken und
-                        unterhaltsame Momente teilen.
-                    </p>
-                </div>
-            </aside>
-        </div>
-
-        <section class="video-section">
             <p>In folgenden Viedo sieht man ein Beispiel für die malerischen Routen die man rund um den Fujiyama zu Fuß
                 genießen kann. Es gibt auch viele Eisenbahnlinien die einem die schönsten Seiten des Berges zeigen, und
                 zu vielen Aktivitäten und Ortserkundungen einladen.</p>
+        </section>
+
+        <section class="video-section">
+
             <iframe src="https://www.youtube.com/embed/dsWmUD6lHd8?si=xcG4wLckJa31q1nt" title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -86,7 +107,7 @@
             </p>
         </section>
         <section class="carousel-section">
-            <h2>Fünf Blickwinkel des Fjuiyama</h2>
+            <h3>Fünf Blickwinkel des Fjuiyama</h3>
             <div class="carousel">
                 <div class="carousel_element fuji_img1"></div>
                 <div class="carousel_element fuji_img2"></div>
@@ -113,7 +134,7 @@
             </p>
         </section>
         <section class="japan-diagram">
-            <h2>Beste Reisezeiten für Japan</h2>
+            <h3>Beste Reisezeiten für Japan</h3>
             <img src="./assets/images/article4/reisezeiten-japan.jpg" alt="Rain periods">
             <p>
                 Farbenfrohe Blüten, leuchtendes Herbstlaub und glitzernder Schnee ziehen
@@ -148,6 +169,29 @@
                 </li>
             </ol>
         </section>
+
+        <section class="follow">
+            <h3>
+                Follow me for more content like this, and share the article with your friends!
+            </h3>
+            <div class="arrow">
+                <img src="./assets/icons/pfeil.svg" alt="">
+                <div class="share-container">
+                    <input type="checkbox" id="share-toggle">
+
+                    <label for="share-toggle" class="share-btn">
+                        <img src="./assets/icons/share_yellow.svg" alt="">
+                        <span>Share</span>
+                    </label>
+                    <img src="./assets/icons/share_green_icon.svg" alt="" class="share-green">
+                    <div class="share-links">
+                        <a href="https://at.linkedin.com/" target="_blank">LinkedIn</a>
+                        <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
     <footer class="footer">
         <div class="infos">
@@ -155,15 +199,18 @@
                 <img src="./assets/icons/copyright_icon.svg" alt="Copyright Icon">
                 <p>Travel Blog 2026</p>
             </div>
-            <a href="">Imprint</a>
-            <a href="">Cookie Preferences</a>
+            <a href="./impressum.html" target="_blank">Imprint</a>
+            <a href="#">Cookie Preferences</a>
         </div>
         <div class="social-media">
-            <a href="https://www.tiktok.com/"><img src="./assets/icons/tiktok_icon.svg" alt="Tik Tok Icon"></a>
-            <a href="https://www.youtube.com/"><img src="./assets/icons/youtube_icon.svg" alt="YouTube Icon"></a>
-            <a href="https://www.facebook.com/?locale=de_DE"><img src="./assets/icons/facebook_icon.svg"
+            <a href="https://www.tiktok.com/" target="_blank"><img src="./assets/icons/tiktok_icon.svg"
+                    alt="Tik Tok Icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="./assets/icons/youtube_icon.svg"
+                    alt="YouTube Icon"></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./assets/icons/facebook_icon.svg"
                     alt="Facebook Icon"></a>
-            <a href="https://www.instagram.com/"><img src="./assets/icons/instagram_icon.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/instagram_icon.svg"
+                    alt=""></a>
         </div>
     </footer>
 </body>

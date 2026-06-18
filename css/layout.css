@@ -94,7 +94,6 @@ main {
   font-weight: 400;
 }
 
-
 .header {
   display: flex;
   align-items: center;
@@ -108,11 +107,16 @@ main {
   background-color: var(--primary-green);
 }
 
+.navbar {
+  width: 1200px;
+}
+
 .navbar ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 72px;
+
+  width: 1200px;
 
   list-style-type: none;
 }
@@ -268,4 +272,14 @@ main {
 .social-media {
   display: flex;
   gap: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding: 0px max(120px, calc(50% - 720px));
+  }
+
+  .footer {
+    padding: 0px max(120px, calc(50% - 720px));
+  }
 }
