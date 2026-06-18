@@ -45,11 +45,6 @@ main {
     font-size: 16px;
 }
 
-.author {
-    width: 20%;
-    height: auto;
-}
-
 .video-section {
     display: flex;
     flex-direction: column;
