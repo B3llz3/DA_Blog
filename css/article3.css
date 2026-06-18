@@ -27,10 +27,16 @@
     flex-direction: row;
     padding: 0px 0px 88px 0px;
     justify-content: space-between;
+   
 }
 
 .diagrams h3 {
     text-align: center;
+    padding-bottom: 24px;
+}
+
+.diagrams p {
+    padding-bottom: 24px;
 }
 
 .comp-diagram img {
@@ -44,15 +50,7 @@
     flex-direction: column;
     }
 
-.diagrams h3 {
-    padding-bottom: 24px;
-    font-size: 32px;
-    font-weight: 600;
-}
 
-.activities p {
-    padding-bottom: 24px;
-}
 
 .expenses {
     width: 519px;
@@ -61,14 +59,7 @@
 
 }
 
-.expenses p {
-    padding-bottom: 78px;
-}
 
-
-.comp-diagram p {
-    font-size: 24px;
-}
 
 .card {
     width: 519px;
