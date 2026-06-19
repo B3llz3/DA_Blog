@@ -106,15 +106,13 @@ main {
 }
 
 .navbar {
-  width: 1200px;
+  margin-left: max(140px, calc(50% - 720px));
 }
 
 .navbar ul {
   display: flex;
   align-items: center;
   gap: 72px;
-
-  width: 1200px;
 
   list-style-type: none;
 }
@@ -223,10 +221,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 72px;
-
-  padding: 60px 120px;
-
   width: 100%;
   height: 128px;
 
@@ -235,7 +229,11 @@ main {
 
 .infos {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   gap: 72px;
+
+  margin-left: max(120px, calc(50% - 720px));
 
   color: var(--primary-white);
 }
@@ -268,10 +266,14 @@ main {
 
 .social-media {
   display: flex;
+  justify-content: flex-end;
+  align-items: centers;
   gap: 16px;
+
+  margin-right: max(120px, calc(50% - 720px));
 }
 
-@media screen and (min-width: 1440px) {
+/* @media screen and (min-width: 1440px) {
   .header {
     padding: 0px max(120px, calc(50% - 720px));
   }
@@ -280,3 +282,4 @@ main {
     padding: 0px max(120px, calc(50% - 720px));
   }
 }
+ */
