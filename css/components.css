@@ -13,7 +13,7 @@
 
 .author h3 {
   padding: 0px;
-  font-family: 'Arima';
+  font-family: "Arima";
   text-align: center;
   font-size: 18px;
   font-weight: 700;
@@ -22,7 +22,7 @@
 
 .author h4 {
   font-size: 18px;
-  font-family: 'Arima';
+  font-family: "Arima";
   font-weight: 400;
   text-align: center;
   color: var(--secondary-braun);
@@ -48,14 +48,16 @@
   color: var(--secondary-braun);
 }
 
-
-
 /* Carousel article1*/
+
 .carousel {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 440px;
+  width: 1300px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .carousel_element {
@@ -80,6 +82,7 @@
 
 .carousel_element:first-child {
   margin-left: 0px;
+  margin-left: 48px;
 }
 
 .carousel_element:hover {
@@ -89,7 +92,7 @@
   transform: perspective(350px) rotateY(0deg) translateX(0px) scale(1.1);
 }
 
-.carousel_element:hover~.carousel_element {
+.carousel_element:hover ~ .carousel_element {
   transform: perspective(350px) rotateY(-10deg) translateX(30px);
 }
 
@@ -118,14 +121,17 @@
   position: relative;
   border-radius: 30px;
   background-color: var(--primary-green-transparent);
-  padding-top: 42px;
-  padding-bottom: 32px;
-  padding-left: 50px;
+  margin-left: 70px;
+  margin-right: 82px;
+  margin-bottom: 88px;
+  margin-top: 176px;
+}
+
+.protip-box ol {
+  padding-top: 26px;
+  padding-bottom: 24px;
+  padding-left: 48px;
   padding-right: 16px;
-  margin-left: 128px;
-  margin-right: 64px;
-  margin-top: 128px;
-  margin-bottom: 128px;
 }
 
 .protip-box li {
@@ -142,7 +148,7 @@
 
 .protip-label {
   position: absolute;
-  top: -45px;
+  top: -60px;
   left: -35px;
   background-color: var(--primary-green);
   color: var(--primary-gelb);
@@ -180,23 +186,21 @@
 }
 
 .follow {
-  padding: 0px 369px 80px 369px
+  padding: 0px 369px 80px 369px;
 }
 
 .follow h3 {
   font-size: 24px;
   text-align: center;
   font-weight: 500;
-
 }
 
 .arrow {
   display: flex;
   gap: 53px;
-
 }
 
-.arrow>img {
+.arrow > img {
   display: flex;
   position: relative;
   top: -10px;
@@ -230,16 +234,15 @@
   transition: width 300ms linear;
   gap: 13.33px;
   font-size: 24px;
-  font-family: 'Arima';
+  font-family: "Arima";
   font-weight: 700;
-
 }
 
 .share-btn img {
   width: 24px;
 }
 
-.share-btn>span {
+.share-btn > span {
   display: flex;
   width: 70px;
   letter-spacing: 5%;
@@ -271,7 +274,7 @@
 }
 
 .share-links a {
-  font-family: 'Arima';
+  font-family: "Arima";
   font-size: 18px;
   font-weight: 600;
   align-items: center;
@@ -279,29 +282,29 @@
 
 /* Beim Klick */
 
-#share-toggle:checked+.share-btn {
+#share-toggle:checked + .share-btn {
   position: relative;
   padding: 15px 25px;
   gap: 0px;
   left: -50px;
 }
 
-#share-toggle:checked+.share-btn>img {
+#share-toggle:checked + .share-btn > img {
   display: none;
 }
 
-#share-toggle:checked~.share-links {
+#share-toggle:checked ~ .share-links {
   max-width: 200px;
   opacity: 1;
   left: -50px;
   position: relative;
 }
 
-#share-toggle:checked+.share-btn {
+#share-toggle:checked + .share-btn {
   width: 118px;
 }
 
-#share-toggle:checked~.share-green {
+#share-toggle:checked ~ .share-green {
   display: flex;
   width: 24px;
   left: -50px;
