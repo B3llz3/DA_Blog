@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     gap: 88px;
-    padding: 0px 118px 0px 118px;
 }
 
 .video-section iframe {
@@ -23,7 +22,6 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 88px;
-    padding: 0px 118px 0px 118px;
 }
 
 .carousel-section h3 {
@@ -58,7 +56,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px 118px 0px 118px;
 }
 
 .japan-diagram h2 {
