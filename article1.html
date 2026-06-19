@@ -8,96 +8,83 @@
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/article1.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Palanquin:100,200,300,regular,500,600,700"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Arima:100,200,300,regular,500,600,700"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/font.css" />
   </head>
   <body>
     <header class="header">
-      <a href=""
+      <a href="index.html"
         ><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"
       /></a>
       <nav class="navbar">
         <ul>
           <li class="highlights-link">
-            <a href="">Highlights</a>
+            <a href="./index.html#highlights">Highlights</a>
           </li>
           <li class="faq-link">
-            <a href="">FAQ</a>
+            <a href="./index.html#faq-section">FAQ</a>
           </li>
           <li class="contact-link">
-            <a href="">Contact</a>
+            <a href="./index.html#contact-form">Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="headline-info">
-        <div class="headline-info--wrapper">
-          <div class="headline-info--wrapper__text">
-            <div>
-              <h3>Wo der Ozean auf deine Seele trifft</h3>
-              <h1>Die atemberaubendsten Strände der Welt</h1>
-            </div>
-            <div>
-              <h2>
-                Von puderweichem weißen Sand bis hin zu dramatischen
-                Küstenlinien, die von türkisfarbenen Wellen umspült werden –
-                diese Strände sind mehr als nur Reiseziele – sie sind ein
-                Lebensgefühl.
-              </h2>
-            </div>
-            <div class="headline-info--wrapper__statisticsoverview">
-              <div class="headline-info--wrapper__statistic">
-                <img
-                  src="./assets/icons/calendar_icon.svg"
-                  alt="Kalender Icon"
-                />
-                <p>Datum: 26.01.2026</p>
+      <section class="landing-section">
+        <div class="headline">
+          <div>
+            <h2>Wo der Ozean auf deine Seele trifft</h2>
+
+            <h1>Die atemberaubendsten Strände der Welts</h1>
+
+            <h4>
+              Von puderweichem weißen Sand bis hin zu dramatischen Küstenlinien,
+              die von türkisfarbenen Wellen umspült werden – diese Strände sind
+              mehr als nur Reiseziele – sie sind ein Lebensgefühl.
+            </h4>
+
+            <div class="info">
+              <div class="icon">
+                <img src="./assets/icons/calendar_icon.svg" alt="calender" />
+                <span>Datum: 19.06.2026</span>
               </div>
-              <div class="headline-info--wrapper__statistic">
-                <img src="./assets/icons/glasses_icon.svg" alt="Brille Icon" />
-                <p>Lesezeit: 6min</p>
+              <div class="icon">
+                <img src="./assets/icons/glasses_icon.svg" alt="eyeglasses" />
+                <span>Lesezeit: 6 min</span>
               </div>
-              <div class="headline-info--wrapper__statistic">
-                <img src="./assets/icons/eye_icon.svg" alt="Augen Icon" />
-                <p>Gelesen: 164</p>
+              <div class="icon">
+                <img src="./assets/icons/eye_icon.svg" alt="visibility" />
+                <span>Gelesen: 164</span>
               </div>
-              <div class="headline-info--wrapper__statistic">
-                <img
-                  src="./assets/icons/share_green_icon.svg"
-                  alt="Teilen Icon grün"
-                />
-                <p>Geteilt: 18</p>
+              <div class="icon">
+                <img src="./assets/icons/share_green_icon.svg" alt="share" />
+                <span>Geteilt: 18</span>
               </div>
             </div>
           </div>
-          <div class="author">
+
+          <article class="author">
             <img
               src="./assets/images/article1/Schmidt_Steffen_rund_grau.png"
               alt="Bild von Steffen Schmidt"
             />
-            <div>
-              <h4>Steffen Schmidt</h4>
-              <h5>Autor</h5>
+            <div class="author-text">
+              <h3>Steffen Schmidt</h3>
+              <h4>Autor</h4>
+
+              <p>
+                Ich reise seit 2017, auf der Jagd nach Momente anstelle von
+                Plänen. Ich bin fasziniert von Schlangen, liebe Haie, könnte
+                wochenlang tief im Dschungel verbringen und kann nie genug
+                Papaya bekommen. Solange es ein nächstes Ziel gibt, weiß ich,
+                dass ich genau da bin, wo ich hingehöre.
+              </p>
             </div>
-            <p>
-              Ich reise seit 2017, auf der Jagd nach Momente anstelle von
-              Plänen. Ich bin fasziniert von Schlangen, liebe Haie, könnte
-              wochenlang tief im Dschungel verbringen und kann nie genug Papaya
-              bekommen. Solange es ein nächstes Ziel gibt, weiß ich, dass ich
-              genau da bin, wo ich hingehöre.
-            </p>
-          </div>
+          </article>
         </div>
       </section>
       <section class="carousel-section">
-        <h2>TOP 5 Strandreiseziele für 2026</h2>
+        <h3>TOP 5 Strandreiseziele für 2026</h3>
         <div class="carousel">
           <div class="carousel_element carousel_img1"></div>
           <div class="carousel_element carousel_img2"></div>
@@ -108,7 +95,7 @@
       </section>
       <section class="text-section">
         <div class="text-section--introduction">
-          <p class="text-black">
+          <p>
             Traumhafte Strände, kristallklares Wasser und feiner Sand ziehen
             jedes Jahr Millionen von Reisenden in die schönsten Küstenregionen
             der Welt. Ob in der Karibik, im Indischen Ozean oder im Pazifik –
@@ -116,9 +103,9 @@
             ihrer unberührten Natur und einzigartigen Landschaften. Während
             manche Besucher nach Ruhe und Entspannung suchen, locken andere
             Strände mit spektakulären Schnorchel- und Tauchmöglichkeiten oder
-            beeindruckenden Sonnenuntergängen. Die Auswahl der schönsten Strände
-            der Welt ist natürlich subjektiv, doch einige Orte schaffen es
-            regelmäßig auf die Spitzenplätze internationaler Rankings. Sie
+            beeindruckenden Sonnenuntergängen. <br />Die Auswahl der schönsten
+            Strände der Welt ist natürlich subjektiv, doch einige Orte schaffen
+            es regelmäßig auf die Spitzenplätze internationaler Rankings. Sie
             vereinen türkisfarbenes Wasser, weiße Sandstrände und eine
             unvergleichliche Atmosphäre, die Reisende aus aller Welt begeistert.
             Wer von einem perfekten Strandurlaub träumt, sollte diese
@@ -133,22 +120,30 @@
           </p>
           <ol class="text-black">
             <li>
-              <span>Bay Beach</span> – Providenciales, Turks- und Caicosinseln
+              <p><b>Bay Beach</b> – Providenciales, Turks- und Caicosinseln</p>
             </li>
             <li>
-              <span>Whitehaven Beach</span> – Whitsunday Island, Queensland,
-              Australien
-            </li>
-            <li><span>Anse Source d’Argent</span> – La Digue, Seychellen</li>
-            <li>
-              <span>Baía do Sancho</span> – Fernando de Noronha, Brasilien
+              <p>
+                <b>Whitehaven Beach</b> – Whitsunday Island, Queensland,
+                Australien
+              </p>
             </li>
             <li>
-              <span>Navagio Beach (Shipwreck Beach)</span> – Zakynthos,
-              Griechenland
+              <p><b>Anse Source d’Argent</b> – La Digue, Seychellen</p>
+            </li>
+            <li>
+              <p><b>Baía do Sancho </b> – Fernando de Noronha, Brasilien</p>
+            </li>
+            <li>
+              <p>
+                <b>Navagio Beach (Shipwreck Beach) </b> – Zakynthos,
+                Griechenland
+              </p>
             </li>
           </ol>
         </div>
+      </section>
+      <section class="protip-section">
         <div class="protip-box">
           <div class="protip-label">
             <img
@@ -160,8 +155,9 @@
             <li>
               Trage bereits 20 bis 30 Minuten vor dem Aufenthalt am Strand eine
               wasserfeste Sonnencreme mit hohem Lichtschutzfaktor auf.
-              <a href="#">Diese ist gut.</a> Denke auch an eine Kopfbedeckung
-              und ausreichend Trinkwasser, besonders in den Mittagsstunden.
+              <a href="#">Hier meine Empfehlung.</a> Denke auch an eine
+              Kopfbedeckung und ausreichend Trinkwasser, besonders in den
+              Mittagsstunden.
             </li>
             <li>
               Nimm nur das Nötigste mit an den Strand und verwende eine
@@ -171,20 +167,46 @@
             </li>
           </ol>
         </div>
-        <div class="text-section--final-text">
-          <p class="text-black">
-            Die Top-5-Strände der Welt zeigen eindrucksvoll, wie vielfältig und
-            faszinierend die schönsten Küstenregionen unseres Planeten sind. Ob
-            türkisblaues Wasser, feiner Sand oder spektakuläre Naturkulissen –
-            jeder dieser Strände bietet ein einzigartiges Urlaubserlebnis. Sie
-            laden zum Entspannen, Schwimmen, Schnorcheln und Genießen
-            unvergesslicher Sonnenuntergänge ein. <br />
-            Gleichzeitig erinnern sie daran, wie wichtig der Schutz unserer
-            Meere und Küsten ist. Wer auf der Suche nach einem außergewöhnlichen
-            Reiseziel ist, findet in diesen Strandparadiesen die perfekte
-            Inspiration für den nächsten Traumurlaub und die Möglichkeit, einige
-            der schönsten Orte der Welt selbst zu entdecken.
-          </p>
+      </section>
+      <section class="final-text-section">
+        <p>
+          Die Top-5-Strände der Welt zeigen eindrucksvoll, wie vielfältig und
+          faszinierend die schönsten Küstenregionen unseres Planeten sind. Ob
+          türkisblaues Wasser, feiner Sand oder spektakuläre Naturkulissen –
+          jeder dieser Strände bietet ein einzigartiges Urlaubserlebnis. Sie
+          laden zum Entspannen, Schwimmen, Schnorcheln und Genießen
+          unvergesslicher Sonnenuntergänge ein. <br />
+          Gleichzeitig erinnern sie daran, wie wichtig der Schutz unserer Meere
+          und Küsten ist. Wer auf der Suche nach einem außergewöhnlichen
+          Reiseziel ist, findet in diesen Strandparadiesen die perfekte
+          Inspiration für den nächsten Traumurlaub und die Möglichkeit, einige
+          der schönsten Orte der Welt selbst zu entdecken.
+        </p>
+      </section>
+      <section class="follow">
+        <h3>
+          Follow me for more content like this, and share the article with your
+          friends!
+        </h3>
+        <div class="arrow">
+          <img src="./assets/icons/pfeil.svg" alt="" />
+          <div class="share-container">
+            <input type="checkbox" id="share-toggle" />
+
+            <label for="share-toggle" class="share-btn">
+              <img src="./assets/icons/share_yellow.svg" alt="" />
+              <span>Share</span>
+            </label>
+            <img
+              src="./assets/icons/share_green_icon.svg"
+              alt=""
+              class="share-green"
+            />
+            <div class="share-links">
+              <a href="https://at.linkedin.com/" target="_blank">LinkedIn</a>
+              <a href="https://web.whatsapp.com/" target="_blank">WhatsApp</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

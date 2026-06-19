@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LandingPage</title>
+  <title>Travel Blog</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/icons/travelblog-logo.svg">
   <link rel="stylesheet" href="./css/index.css" />
   <link rel="stylesheet" href="./css/components.css" />
   <link rel="stylesheet" href="./css/layout.css" />
@@ -14,24 +16,29 @@
 
 <body>
   <header class="header">
-    <a href=""><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo" /></a>
     <nav class="navbar">
       <ul>
+        <li>
+          <a href="index.html#hero"><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"></a>
+        </li>
         <li class="highlights-link">
-          <a href="#highlights">Highlights</a>
+          <a href="index.html#highlights">Highlights</a>
         </li>
         <li class="faq-link">
-          <a href="#faq-section">FAQ</a>
+          <a href="index.html#faq-section">FAQ</a>
         </li>
         <li class="contact-link">
-          <a href="#contact-form">Contact</a>
+          <a href="index.html#contact-form">Contact</a>
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- Daniel -->
-    <section class="hero-section"></section>
+    <section class="hero-section" id="hero">
+
+
+    </section>
     <!-- Alexander -->
     <section class="highlights" id="highlights">
       <div>
@@ -53,7 +60,7 @@
 
           <div class="slides">
             <div class="slide s1">
-              <a href="./article1.html"><img src="./assets/images/Slide 01.svg" alt="" />
+              <a href="./article1.html"><img src="./assets/images/index/Slide 01.svg" alt="" />
                 <div class="text-box">
                   <h1>Die atemberaubendsten Strände der Welt</h1>
                   <p>Von puderweichem weißen Sand bis hin zu dramatischen
@@ -65,7 +72,7 @@
             </div>
 
             <div class="slide s2">
-              <a href="./article2.html"><img src="./assets/images/Slide 02.svg" alt="" />
+              <a href="./article2.html"><img src="./assets/images/index/Slide 02.svg" alt="" />
                 <div class="text-box">
                   <h1>Kopenhagen in 3 Tagen: Großartige Erlebnisse, cleveres Budget</h1>
                   <p>Entdecken Sie Kopenhagen – eine Stadt, in der historischer Charme auf modernes Design, eine
@@ -77,10 +84,10 @@
             </div>
 
             <div class="slide s3">
-              <a href="./article3.html"><img src="./assets/images/Slide 03.svg" alt="" />
+              <a href="./article3.html"><img src="./assets/images/index/Slide 03.svg" alt="" />
                 <div class="text-box">
-                  <h1>Pattaya Pulse:<br>
-                    Kulinarische Genüsse, Sonne und Neonzauber</h1>
+                  <h1>Pattaya Pulse:
+                    Genüsse, Sonne und Neonzauber</h1>
                   <p>Von lebhaften Promenaden bis hin zu den nahegelegenen Inseln bietet die Stadt eine
                     abwechslungsreiche und energiegeladene Auszeit. Entdecken Sie Pattaya City mit ihrem pulsierenden
                     Nachtleben und ihren vielfältigen kulturellen Sehenswürdigkeiten.</p>
@@ -89,7 +96,7 @@
             </div>
 
             <div class="slide s4">
-              <a href="./article4.html"><img src="./assets/images/Slide 04.svg" alt="" />
+              <a href="./article4.html"><img src="./assets/images/index/Slide 04.svg" alt="" />
                 <div class="text-box">
                   <h1>Mt. Fuji aus verschiedenen Perspektiven</h1>
                   <p>Entdecken Sie die faszinierende Landschaft rund um den Fujiyama, zwischen traditionellem Lebensstil
@@ -110,7 +117,7 @@
         </div>
     </section>
     <!-- Steffen -->
-    <section class="faq-section">
+    <section class="faq-section" id="faq-section">
       <div class="faq--headline">
         <img src="./assets/icons/faq-logo.svg" alt="" />
         <h2>FAQ</h2>
@@ -204,10 +211,10 @@
         <div>
     </section>
     <!-- Oliver -->
-    <section class="contact-form">
+    <section class="contact-form" id="contact-form">
       <div class="contact-text">
         <div class="contact-text-headline">
-          <img src="./assets/icons/person_pin2.svg" alt="bild" />
+          <img src="./assets/icons/person_pin_yellow.svg" alt="bild" />
           <h2>Kontakt<br>formular</h2>
         </div>
         <p>

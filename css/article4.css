@@ -1,54 +1,7 @@
 @import url("./variables.css");
-
-main {
-    padding: 40px 120px;
-}
-
-.headcontent {
-    width: 100%;
-    display: flex;
-    gap: 40px;
-    padding-bottom: 20px;
-}
-
-.headline {
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.headline>p {
-    font-size: 28px;
-}
-
-.datacards-wrapper {
-    display: flex;
-    gap: 32px;
-
-    padding-top: 40px;
-}
-
-.datacard {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.datacard img {
-    width: 16px;
-    height: 18px;
-}
-
-.datacard p {
-    font-size: 16px;
-}
-
-.author {
-    width: 20%;
-    height: auto;
-}
+@import url("./components.css");
+@import url("./layout.css");
+@import url("./font.css");
 
 .video-section {
     display: flex;
@@ -56,10 +9,6 @@ main {
     align-items: center;
     justify-content: center;
     gap: 88px;
-}
-
-.video-section p {
-    padding-top: 48px;
 }
 
 .video-section iframe {
@@ -75,7 +24,7 @@ main {
     margin-bottom: 88px;
 }
 
-.carousel-section h2 {
+.carousel-section h3 {
     margin: 64px;
 }
 
@@ -116,6 +65,8 @@ main {
 .japan-diagram img {
     width: 640px;
     height: 430px;
+
+    margin-top: 24px;
 
     border-radius: 53px;
 

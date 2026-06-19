@@ -226,7 +226,7 @@ form:has(#policy:checked) input[type="submit"]:hover {
 }
 
 .highlights {
-    padding: 88px 119px 0px 121px;
+    padding: 88px 0px 0px 0px;
 }
 
 .highlights-slider {
