@@ -192,6 +192,12 @@ input[type="text"] {
 input[type="checkbox"] {
     width: 24px;
     height: 24px;
+    border:
+}
+
+input[type="checkbox"]:hover {
+    width: 24px;
+    height: 24px;
 }
 
 input[type="submit"] {
@@ -242,17 +248,17 @@ form:has(#policy:checked) input[type="submit"]:hover {
     pointer-events: none;
 }
 
-.slide a{
+.slide a {
     display: block;
     width: 100%;
     height: 100%;
-    }
+}
 
-    .slide a img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+.slide a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 .text-box {
     position: absolute;
