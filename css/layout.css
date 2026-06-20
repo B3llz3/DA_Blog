@@ -233,7 +233,6 @@ main {
 
 .infos {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
   gap: 72px;
 
@@ -271,7 +270,6 @@ main {
 .social-media {
   display: flex;
   justify-content: flex-end;
-  align-items: centers;
   gap: 16px;
 }
 

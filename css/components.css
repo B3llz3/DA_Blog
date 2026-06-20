@@ -199,8 +199,12 @@
   gap: 53px;
 }
 
+.arrow-mobile {
+  display: none;
+}
+
 .arrow>img {
-  display: flex;
+  
   position: relative;
   top: -10px;
   left: 0px;
@@ -226,7 +230,6 @@
   border-radius: 40px;
   background: var(--primary-green);
   color: var(--primary-gelb);
-  font-size: 32px;
   font-weight: bold;
   width: 158px;
   height: 48px;
