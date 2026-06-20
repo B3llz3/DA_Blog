@@ -105,10 +105,6 @@ main {
   background-color: var(--primary-green);
 }
 
-.navbar {
-  
-}
-
 .navbar ul {
   display: flex;
   align-items: center;
