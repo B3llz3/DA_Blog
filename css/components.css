@@ -12,7 +12,6 @@
 }
 
 .author h3 {
-  padding: 0px;
   font-family: "Arima";
   text-align: center;
   font-size: 18px;
@@ -92,7 +91,7 @@
   transform: perspective(350px) rotateY(0deg) translateX(0px) scale(1.1);
 }
 
-.carousel_element:hover ~ .carousel_element {
+.carousel_element:hover~.carousel_element {
   transform: perspective(350px) rotateY(-10deg) translateX(30px);
 }
 
@@ -200,7 +199,7 @@
   gap: 53px;
 }
 
-.arrow > img {
+.arrow>img {
   display: flex;
   position: relative;
   top: -10px;
@@ -242,7 +241,7 @@
   width: 24px;
 }
 
-.share-btn > span {
+.share-btn>span {
   display: flex;
   width: 70px;
   letter-spacing: 5%;
@@ -282,29 +281,29 @@
 
 /* Beim Klick */
 
-#share-toggle:checked + .share-btn {
+#share-toggle:checked+.share-btn {
   position: relative;
   padding: 15px 25px;
   gap: 0px;
   left: -50px;
 }
 
-#share-toggle:checked + .share-btn > img {
+#share-toggle:checked+.share-btn>img {
   display: none;
 }
 
-#share-toggle:checked ~ .share-links {
+#share-toggle:checked~.share-links {
   max-width: 200px;
   opacity: 1;
   left: -50px;
   position: relative;
 }
 
-#share-toggle:checked + .share-btn {
+#share-toggle:checked+.share-btn {
   width: 118px;
 }
 
-#share-toggle:checked ~ .share-green {
+#share-toggle:checked~.share-green {
   display: flex;
   width: 24px;
   left: -50px;

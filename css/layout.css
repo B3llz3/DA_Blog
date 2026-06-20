@@ -16,8 +16,7 @@ h1 {
   font-weight: 700;
   font-size: 64px;
   color: var(--primary-gelb);
-
-  line-height: 120%;
+  padding-bottom: 8px;
 }
 
 h2 {
@@ -25,6 +24,7 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   color: var(--primary-green);
+  padding-bottom: 8px;
 }
 
 h3 {
@@ -106,11 +106,11 @@ main {
 }
 
 .header img {
- 
+
   padding-right: 102px;
   height: 72px;
   width: 174px;
-  }
+}
 
 .navbar ul {
   display: flex;
@@ -275,9 +275,9 @@ main {
   gap: 16px;
 }
 
- @media screen and (min-width: 1441px) {
+@media screen and (min-width: 1441px) {
   .header {
-    padding: 32px 0px 24px calc(50% - 720px + 146px) ;
+    padding: 32px 0px 24px calc(50% - 720px + 146px);
   }
 
   .footer {
