@@ -105,6 +105,13 @@ main {
   background-color: var(--primary-green);
 }
 
+.header img {
+ 
+  padding-right: 102px;
+  height: 72px;
+  width: 174px;
+  }
+
 .navbar ul {
   display: flex;
   align-items: center;
