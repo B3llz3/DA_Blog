@@ -91,7 +91,7 @@ details[open] .faq--trigger {
 form {
     display: block;
     width: 100%;
-    padding-top: 60px;
+    padding-top: -9px;
 }
 
 .contact-form {
@@ -157,7 +157,7 @@ label {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 500;
-    padding: 45px 0;
+    padding: 65px 0px 12px 0px;
 }
 
 .policy {
