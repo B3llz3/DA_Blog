@@ -16,8 +16,7 @@ h1 {
   font-weight: 700;
   font-size: 64px;
   color: var(--primary-gelb);
-
-  line-height: 120%;
+  padding-bottom: 8px;
 }
 
 h2 {
@@ -25,6 +24,7 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   color: var(--primary-green);
+  padding-bottom: 8px;
 }
 
 h3 {
@@ -97,16 +97,19 @@ main {
 .header {
   display: flex;
   align-items: center;
-  gap: 72px;
-
+  /* gap: 72px; */
+  padding: 32px 733px 24px 146px;
   width: 100%;
   height: 128px;
 
   background-color: var(--primary-green);
 }
 
-.navbar {
-  margin-left: max(140px, calc(50% - 720px));
+.header img {
+
+  padding-right: 102px;
+  height: 72px;
+  width: 174px;
 }
 
 .navbar ul {
@@ -118,8 +121,9 @@ main {
 }
 
 .navbar img {
+  padding-right: 30px;
   height: 72px;
-  width: 72px;
+  width: 102px;
 }
 
 .navbar a {
@@ -223,7 +227,7 @@ main {
   align-items: center;
   width: 100%;
   height: 128px;
-
+  padding: 60px 120px 60px 120px;
   background-color: var(--primary-green);
 }
 
@@ -233,7 +237,6 @@ main {
   align-items: center;
   gap: 72px;
 
-  margin-left: max(120px, calc(50% - 720px));
 
   color: var(--primary-white);
 }
@@ -251,6 +254,7 @@ main {
   justify-content: centser;
   align-items: center;
   gap: 4px;
+  padding-right: 26px;
 }
 
 .copyright img {
@@ -269,17 +273,14 @@ main {
   justify-content: flex-end;
   align-items: centers;
   gap: 16px;
-
-  margin-right: max(120px, calc(50% - 720px));
 }
 
-/* @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1441px) {
   .header {
-    padding: 0px max(120px, calc(50% - 720px));
+    padding: 32px 0px 24px calc(50% - 720px + 146px);
   }
 
   .footer {
-    padding: 0px max(120px, calc(50% - 720px));
+    padding: 60px max(120px, calc(50% - 720px + 160px));
   }
 }
- */
