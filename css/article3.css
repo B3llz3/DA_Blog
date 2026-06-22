@@ -95,61 +95,12 @@
 
 /* Mobile */
 
-@media screen and (min-width: 319px) and (max-width: 767px) {
-
-    h4 {
-        line-height: 120%;
-    }
-
-    p,
-    li {
-
-        padding-bottom: 16px;
-
-    }
-
-    .landing-section {
-        padding: 24px 15px 32px 15px
-    }
-
-    .headline {
-        flex-direction: column;
-        padding-bottom: 40px;
-
-    }
-
-    .info {
-        display: flex;
-        flex-direction: row;
+@media screen and (min-width: 319px) and (max-width: 499px) {
 
 
-        flex-wrap: wrap;
-        column-gap: 13px;
-        padding-right: 0px;
-    }
-
-    .icon {
-
-        padding-top: 8px;
-
-    }
-
-    .author {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .author h4 {
-
-        padding-bottom: 8px;
-    }
-
-    .author-text {
-        padding: 16px 8px;
-    }
 
     .rain-diagram {
-        padding: 0px 15px 32px 15px;
+        padding: 0px 15px 30px 15px;
     }
 
     .rain-diagram img {
@@ -167,11 +118,11 @@
     }
 
     .rain-diagram p {
-        padding: 32px 0px;
+        padding: 30px 0px 0px 0px;
     }
 
     .comp-diagram {
-        padding: 0px 15px 24px 15px;
+        padding: 0px 15px 30px 15px;
     }
 
     .comp-diagram img {
@@ -179,9 +130,8 @@
     }
 
     .diagrams {
-
         flex-direction: column;
-        padding: 0px 0px 32px 0px;
+        padding: 0px 0px 30px 0px;
         align-items: center;
     }
 
@@ -208,7 +158,7 @@
         width: calc(100vw - 24px);
         display: flex;
         flex-direction: column;
-        padding-top: 32px;
+        padding-top: 30px;
     }
 
     .card {
@@ -219,347 +169,17 @@
         border-radius: 30px;
     }
 
-    .follow {
-        padding: 0px 15px 119px 15px;
-    }
-
-    .arrow {
-
-        gap: 51px;
-    }
-
-    .arrow-desktop {
-        display: none;
-    }
-
-    .arrow-mobile {
-        display: block;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 134px;
-        padding: 30px 24px 30px 24px;
-    }
-
-    .infos {
-        flex-direction: column;
-        gap: 0px;
-        align-items: start;
-    }
-
-    .footer-links {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-links a {
-        padding-bottom: 8px;
-    }
-
-    .copyright {
-        order: 2;
-        padding: 0;
-    }
-
-    .header {
-        height: 70px;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .navbar img {
-        padding-right: 0px;
-        height: 56px;
-        width: 56px;
-    }
-
-    .navbar a {
-        padding-bottom: 0px;
-    }
-
-    .navbar li {
-        position: relative;
-        padding-bottom: 0px;
-        top: +7px;
-    }
-
-    .highlights-link {
-        display: none;
-    }
-
-    .faq-link {
-        display: none;
-    }
-
-    .contact-link {
-        display: none;
-    }
-
-    .copyright p {
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 319px) and (max-width: 374px) {
-
-    h1 {
-        font-size: 36px;
-    }
-
-    h2 {
-        font-size: 19px;
-    }
-
-    h3 {
-        font-size: 19px;
-
-    }
-
-    h4 {
-
-        font-size: 17px;
-    }
-
-    p,
-    li {
-        font-size: 15px;
-
-    }
-
-    .info {
-        font-size: 15px;
-    }
-
-    .author {
-
-        width: 290px;
-    }
-
-    .author h4 {
-        font-size: 15px;
-    }
-
-    .follow h3 {
-        font-size: 17px;
-    }
-
-    .social-media img {
-        height: 20px;
-
-    }
-
-    .copyright img {
-        width: 18px;
-        height: 18px;
-    }
-
-    .infos a {
-        font-size: 15px;
-    }
-
-    .copyright p {
-        font-size: 15px;
-    }
-
-    .arrow {
-        gap: 50px;
-    }
-
-}
-
-@media screen and (min-width: 375px) and (max-width: 499px) {
-
-    h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    h3 {
-        font-size: 20px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    p,
-    li {
-        font-size: 16px;
-
-    }
-
-    .info {
-        font-size: 16px;
-        flex-wrap: wrap;
-    }
-
-    .author {
-        width: 345px;
-    }
-
-    .author h4 {
-        font-size: 16px;
-    }
-
-    .follow h3 {
-        font-size: 18px;
-    }
-
-    .navbar img {
-        padding-right: 0px;
-        height: 56px;
-        width: 56px;
-    }
-
-    .social-media img {
-        height: 24px;
-
-    }
-
-    .copyright img {
-        width: 20px;
-        height: 20px;
-    }
-
-    .arrow {
-        gap: 100px;
-    }
-
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
 
-    h1 {
-        font-size: 42px;
-    }
-
-    h2 {
-        font-size: 22px;
-    }
-
-    h3 {
-        font-size: 22px;
-    }
-
-    h4 {
-        font-size: 20px;
-    }
-
-    p,
-    li {
-        font-size: 18px;
-
-    }
-
-    .info {
-        font-size: 18px;
-        flex-wrap: wrap;
-    }
-
-    .author {
-        width: 345px;
-    }
-
-    .author h4 {
-        font-size: 18px;
-    }
-
-    .follow h3 {
-        font-size: 20px;
-    }
-
-    .social-media img {
-        height: 26px;
-
-    }
-
-    .copyright img {
-        width: 22px;
-        height: 22px;
-    }
-
-    .infos a {
-        font-size: 18px;
-    }
-
-    .copyright p {
-        font-size: 18px;
-    }
-
-    .arrow {
-        gap: 150px;
-    }
-
-}
-
-@media screen and (min-width: 319px) and (max-width: 599px) {
-    .info {
-        justify-content: left;
-    }
-
-}
-
-/* Tablett */
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-
-    h4 {
-        line-height: 120%;
-    }
-
-    p,
-    li {
-
-        padding-bottom: 16px;
-
-    }
-
-    .landing-section {
-        padding: 24px 30px 32px 30px
-    }
-
-    .headline {
-        flex-direction: column;
-        padding-bottom: 40px;
-
-    }
-
-    .info {
-        display: flex;
-        gap: 13px;
-        padding-right: 0px;
-    }
-
-    .icon {
-        padding-top: 16px;
-
-    }
-
-    .author {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .author h4 {
-
-        padding-bottom: 8px;
-    }
-
-    .author-text {
-        padding: 16px 8px;
+    .rain-diagram {
+        padding: 0px 30px 30px 30px;
     }
 
     .rain-diagram img {
         height: auto;
-        width: calc(100vw - 24px);
-
+        width: calc(100vw - 60px);
     }
 
     .card-rain {
@@ -571,7 +191,76 @@
     }
 
     .rain-diagram p {
-        padding: 32px 0px;
+        padding: 32px 0px 0px 0px;
+    }
+
+    .comp-diagram {
+        padding: 0px 30px 30px 30px;
+    }
+
+    .comp-diagram img {
+        width: calc(100vw - 60px);
+    }
+
+    .diagrams {
+        flex-direction: column;
+        padding: 0px 0px 32px 0px;
+        align-items: center;
+    }
+
+    .diagrams h3 {
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .diagrams p {
+        padding-bottom: 30px;
+    }
+
+    .activities {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc(100vw - 60px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expenses {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc(100vw - 60px);
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .card {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc(100vw - 60px);
+        height: auto;
+        border-radius: 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+    .rain-diagram img {
+        height: auto;
+        width: calc(100vw - 24px);
+    }
+
+    .card-rain {
+        height: auto;
+        aspect-ratio: 640/436;
+        width: calc(100vw - 60px);
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .rain-diagram p {
+        padding: 30px 0px 0px 0px;
     }
 
     .rain-diagram {
@@ -587,7 +276,6 @@
     }
 
     .diagrams {
-
         flex-direction: column;
         padding: 0px 0px 32px 0px;
         align-items: center;
@@ -626,172 +314,78 @@
         height: auto;
         border-radius: 30px;
     }
-
-    .follow {
-        padding: 0px 15px 119px 15px;
-    }
-
-    .arrow {
-
-        gap: 51px;
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 150px;
-        padding: 30px 24px 30px 24px;
-    }
-
-    .infos {
-        flex-direction: column;
-        gap: 0px;
-        align-items: start;
-    }
-
-    .footer-links {
-        order: 1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footer-links a {
-        padding-bottom: 8px;
-    }
-
-    .copyright {
-        order: 2;
-        padding: 0;
-    }
-
-    .header {
-        height: 80px;
-        padding: 0;
-        justify-content: center;
-    }
-
-    .navbar img {
-        padding-right: 0px;
-        height: 64px;
-        width: 64px;
-    }
-
-    .navbar a {
-        padding-bottom: 0px;
-    }
-
-    .navbar li {
-        position: relative;
-        padding-bottom: 0px;
-        top: +7px;
-    }
-
-    .highlights-link {
-        display: none;
-    }
-
-    .faq-link {
-        display: none;
-    }
-
-    .contact-link {
-        display: none;
-    }
-
-    .copyright p {
-        padding: 0;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 899px) {
-
-    h1 {
-        font-size: 48px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    h3 {
-        font-size: 24px;
-    }
-
-    h4 {
-        font-size: 22px;
-    }
-
-    p,
-    li {
-        font-size: 20px;
-    }
-
-    .author {
-        width: 345px;
-    }
-
-    .arrow>img {
-        left: 100px;
-    }
-
-    .arrow {
-        gap: 150px;
-    }
-
-
 }
 
 @media screen and (min-width: 900px) and (max-width: 1023px) {
 
-    h1 {
-        font-size: 40px;
+    .rain-diagram img {
+        height: auto;
+        width: calc(100% - 32px);
+        aspect-ratio: 640/436;
     }
 
-    h2 {
-        font-size: 20px;
+    .card-rain {
+        height: auto;
+        aspect-ratio: 640/436;
+        width: 75%;
+        border-radius: 30px;
     }
 
-    h3 {
-        font-size: 20px;
+    .rain-diagram p {
+        padding: 30px 0px 0px 0px;
     }
 
-    h4 {
-        font-size: 18px;
+    .rain-diagram {
+        padding: 0px 30px 32px 30px;
     }
 
-    p,
-    li {
-        font-size: 16px;
-
+    .comp-diagram {
+        padding: 0px 30px 24px 30px;
     }
 
-    .author {
-        width: 345px;
+    .diagrams {
+        padding: 0px 0px 32px 0px;
+        align-items: center;
     }
 
-    .author h4 {
-        font-size: 16px;
+    .diagrams h3 {
+        text-align: center;
+        padding-bottom: 16px;
     }
 
-    .follow h3 {
-        font-size: 18px;
+    .diagrams p {
+        padding-bottom: 16px;
     }
 
-    .navbar img {
-        padding-right: 0px;
-        height: 56px;
-        width: 56px;
+    .activities {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc((100% - 32px) / 2);
+        display: flex;
+        flex-direction: column;
     }
 
-    .social-media img {
-        height: 24px;
-
+    .expenses {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc((100% - 32px) / 2);
+        display: flex;
+        flex-direction: column;
+        padding-top: 0px;
     }
 
-    .copyright img {
-        width: 20px;
-        height: 20px;
+    .card {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
     }
+}
 
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    main {
+        padding: 0px 120px;
+    }
 }
