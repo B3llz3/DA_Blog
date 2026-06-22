@@ -254,16 +254,20 @@
         <div class="form-row">
           <div class="form-group">
             <label for="help">Wie kann ich helfen?</label>
-            <input type="text" id="help" name="help" />
+            <textarea rows="2"></textarea>
           </div>
         </div>
         <div class="form-row-checkbox">
-          <input type="checkbox" id="policy" name="policy" value="policy" />
-          <label for="policy">
-            Ich habe die <span>Datenschutzerklärung</span> gelesen und stimme der Verarbeitung meiner
-            Daten wie beschrieben zu.</label>
+          <label class="cb-wrap">
+            <input type="checkbox">
+            <span class="cb-box"></span>
+          </label>
+          <p>
+            Ich habe die <span class="policy">Datenschutzerklärung</span> gelesen und stimme der Verarbeitung meiner
+            Daten wie beschrieben zu.<br></p>
         </div>
-        <div class="form-group">
+        <p class="error">Please accept the privacy policy.</p>
+        <div class="form-group-submit">
           <input type="submit" value="Senden">
         </div>
       </form>
@@ -275,8 +279,10 @@
         <img src="./assets/icons/copyright_icon.svg" alt="Copyright Icon" />
         <p>Travel Blog 2026</p>
       </div>
+      <div class="footer-links">
       <a href="">Imprint</a>
       <a href="">Cookie Preferences</a>
+    </div>
     </div>
     <div class="social-media">
       <a href="https://www.tiktok.com/"><img src="./assets/icons/tiktok_icon.svg" alt="Tik Tok Icon" /></a>

@@ -17,62 +17,64 @@
 
 <body>
     <header class="header">
-        <a href=""><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"></a>
+        <a href="./index.html"><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"></a>
         <nav class="navbar">
             <ul>
                 <li class="highlights-link">
-                    <a href="#">Highlights</a>
+                    <a href="./index.html#highlights">Highlights</a>
                 </li>
                 <li class="faq-link">
-                    <a href="#">FAQ</a>
+                    <a href="./index.html#faq-section">FAQ</a>
                 </li>
                 <li class="contact-link">
-                    <a href="#">Contact</a>
+                    <a href="./index.html#contact-form">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <main aria-label="hauptcontent">
-        <div class="headcontent">
+    <main aria-label="landing-section">
+        <section class="landing-section">
             <div class="headline">
-                <h3>Ein stilvoller skandinavischer Kurztrip</h3>
-                <h1>Kopenhagen in 3 Tagen: Großartige Erlebnisse, cleveres Budget</h1>
-                <p>Entdecken Sie Kopenhagen – eine Stadt, in der historischer Charme auf modernes Design, eine lebendige
-                    Fahrradkultur und ein Lebensgefühl am Wasser trifft. Erleben Sie das Herz Skandinaviens bei
-                    gemütlichen Cafés, innovativer Küche und einem lässigen, coolen Stadtleben.</p>
-                <div class="headline-cards">
-                    <div class="headline-card">
-                        <img src="./assets/icons/calendar_month.svg" alt="date">
-                        <p>Date 26.03.2026</p>
+                <div>
+                    <h2>Ein stilvoller skandinavischer Kurztrip</h2>
+                    <h1>Kopenhagen in 3 Tagen: Großartige Erlebnisse</h1>
+                    <h4>Entdecken Sie Kopenhagen – eine Stadt, in der historischer Charme auf modernes Design, eine
+                        lebendige
+                        Fahrradkultur und ein Lebensgefühl am Wasser trifft. Erleben Sie das Herz Skandinaviens bei
+                        gemütlichen Cafés, innovativer Küche und einem lässigen, coolen Stadtleben.</h4>
+                    <div class="info">
+                        <div class="icon">
+                            <img src="./assets/icons/calendar_icon.svg" alt="calender">
+                            <span>Date 26.03.2026</span>
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/icons/glasses_icon.svg" alt="eyeglasses">
+                            <span>Reading time: 6min.</span>
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/icons/eye_icon.svg" alt="visibility">
+                            <span>Read: 164</span>
+                        </div>
+                        <div class="icon">
+                            <img src="./assets/icons/share_green_icon.svg" alt="share">
+                            <span>Shared: 18</span>
+                        </div>
                     </div>
-                    <div class="headline-card">
-                        <img src="./assets/icons/eyeglasses_2.svg" alt="reading">
-                        <p>Reading time: 6min.</p>
-                    </div>
-                    <div class="headline-card">
-                        <img src="./assets/icons/visibility.svg" alt="view">
-                        <p>Read: 164</p>
-                    </div>
-                    <div class="headline-card">
-                        <img src="./assets/icons/share.svg" alt="share">
-                        <p>Shared: 18</p>
+
+                </div>
+                <div class="author">
+                    <img src="./assets/images/articel2/author.jpg" alt="author">
+                    <div class="author-text">
+                        <h3>Oliver Rittinghaus</h3>
+                        <h4>Author</h4>
+                        <p>Reisen bedeutet für mich, neue Städte zu entdecken, Kulturen kennenzulernen und besondere
+                            Momente
+                            festzuhalten. Besonders gerne erkunde ich pulsierende Metropolen und verbringe Zeit am Meer.
+                        </p><br>
                     </div>
                 </div>
 
             </div>
-            <div class="author-card">
-                <img src="./assets/images/articel2/author.jpg" alt="author">
-                <div class="author-text">
-                    <h4>Oliver Rittinghaus</h4>
-                    <h5>Author</h5>
-                    <p>Reisen bedeutet für mich, neue Städte zu entdecken, Kulturen kennenzulernen und besondere Momente
-                        festzuhalten. Besonders gerne erkunde ich pulsierende Metropolen und verbringe Zeit am Meer.
-                    </p><br>
-                </div>
-            </div>
-
-        </div>
-        <div class="maincontent">
             <p>Kopenhagen ist eine Stadt, die Geschichte und Moderne auf einzigartige Weise verbindet. Für diesen
                 Guide
                 habe ich drei Tage lang die dänische Hauptstadt erkundet und die besten Highlights, versteckten Orte
@@ -86,6 +88,10 @@
                 modern und gemütlich wirkt. Drei Tage reichen aus, um die wichtigsten Highlights zu entdecken und
                 das
                 berühmte dänische "Hygge"-Gefühl selbst zu erleben.</p>
+        </section>
+
+        </div>
+        <div class="maincontent">
             <div class="video">
                 <iframe src="https://www.youtube.com/embed/IeAHg4KaMc0" style="border-radius:30px; height:520px;"
                     title="Scandinavian Beauty Copenhagen"></iframe>
@@ -122,44 +128,39 @@
 
             <p>Top Spartipps für Kopenhagen:</p>
         </div>
-        <div class="footcontent">
-            <div class="testbox-1">
-                <div class="protipps">
-                    <img src="./assets/icons/glühbirne.svg" alt="glühbirne">
-                    <p>Pro tipps</p>
+        <section class="protip-section">
+            <div class="protip-box">
+                <div class="protip-label">
+                    <img src="./assets/icons/bulb-yellow.svg" alt="gelbe Glühbirne" />Pro Tipps
                 </div>
-                <div class="tipbox">
-                    <ol class="stichpunkte">
-                        <li>Ein Fahrrad mieten statt öffentliche Verkehrsmittel nutzen.</li>
-                        <li>Kostenlose Sehenswürdigkeiten und Hafenpromenaden erkunden.</li>
-                    </ol>
-                </div>
+                <ol class="text-black">
+                    <li>Ein Fahrrad mieten statt öffentliche Verkehrsmittel nutzen.</li>
+                    <li>Kostenlose Sehenswürdigkeiten und Hafenpromenaden erkunden.</li>
+                </ol>
             </div>
-            <div class="testbox-2">
-                <h3>Folge mir für mehr Inhalte dieser Art und teile den Artikel mit deinen Freunden!</h3>
-                <div class="pfeil">
-                    <img src="./assets/icons/pfeil.svg" alt="pfeil">
-                </div>
-            </div>
-        </div>
-        <input type="checkbox" id="toggle">
-        <div class="testbox-3">
-            <div class="slot1">
-                <label class="btn btn1" for="toggle"><img src="./assets/icons/share_grey.svg" alt="share">Share</label>
-            </div>
-            <div class="slot2">
-                <div class="button2">
-                    <label class="btn btn2" for="toggle">Share</label>
-                </div>
-                <div class="share-block">
-                    <img src="./assets/icons/share_grey.svg" alt="share">
-                    <div class="share-block-links">
-                        <a href="#">LindedIn</a>
+        </section>
+        <section class="follow">
+            <h3>
+                Follow me for more content like this, and share the article with your friends!
+            </h3>
+            <div class="arrow">
+                <img src="./assets/icons/pfeil.svg" alt="">
+                <div class="share-container">
+                    <input type="checkbox" id="share-toggle">
+
+                    <label for="share-toggle" class="share-btn">
+                        <img src="./assets/icons/share_yellow.svg" alt="">
+                        <span>Share</span>
+                    </label>
+                    <img src="./assets/icons/share_green_icon.svg" alt="" class="share-green">
+                    <div class="share-links">
+                        <a href="#">LinkedIn</a>
                         <a href="#">WhatsApp</a>
                     </div>
                 </div>
             </div>
-        </div>
+
+        </section>
     </main>
     <footer class="footer">
 
@@ -172,19 +173,19 @@
             <a href="">Cookie Preferences</a>
         </div>
         <div class="social-media">
-            <a href="https://www.tiktok.com/"><img src="./assets/icons/tiktok_icon.svg" alt="Tik Tok Icon"></a>
-            <a href="https://www.youtube.com/"><img src="./assets/icons/youtube_icon.svg" alt="YouTube Icon"></a>
-            <a href="https://www.facebook.com/?locale=de_DE"><img src="./assets/icons/facebook_icon.svg"
+            <a href="https://www.tiktok.com/" target="_blank"><img src="./assets/icons/tiktok_icon.svg" alt="Tik Tok Icon"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="./assets/icons/youtube_icon.svg" alt="YouTube Icon"></a>
+            <a href="https://www.facebook.com/?locale=de_DE" target="_blank"><img src="./assets/icons/facebook_icon.svg"
                     alt="Facebook Icon"></a>
-            <a href="https://www.instagram.com/"><img src="./assets/icons/instagram_icon.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/icons/instagram_icon.svg" alt=""></a>
         </div>
     </footer>
     <section class="sticky-footbar">
         <div class="footbar">
-            <a href=""><img src="./assets/icons/home.svg" alt="home"></a>
-            <a href=""><img src="./assets/icons/rocket_launch_green.svg" alt="rocket"></a>
-            <a href=""><img src="./assets/icons/live_help.svg" alt="help"></a>
-            <a href=""><img src="./assets/icons/person_pin_green.svg" alt="person"></a>
+            <a href="./index.html"><img src="./assets/icons/home.svg" alt="home"></a>
+            <a href="./index.html#highlight"><img src="./assets/icons/rocket_launch_green.svg" alt="rocket"></a>
+            <a href="./index.html#faq-section"><img src="./assets/icons/live_help.svg" alt="help"></a>
+            <a href="./index.html#contact-form"><img src="./assets/icons/person_pin_green.svg" alt="person"></a>
         </div>
     </section>
 </body>
