@@ -11,11 +11,16 @@
 }
 
 .rain-diagram img {
-    padding: 24px 0px 88px 0px;
+    width: 640px;
+    height: 436px;
 }
 
 .rain-diagram p {
-    padding-bottom: 88px;
+    padding: 88px 0px;
+}
+
+.rain-diagram h3 {
+    padding-bottom: 24px;
 }
 
 .comp-diagram {
@@ -59,7 +64,16 @@
 
 }
 
-
+.card-rain {
+    width: 640px;
+    height: 436px;
+    border-radius: 53px;
+    box-shadow: -2px 4px 11.6px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .card {
     width: 519px;
@@ -78,6 +92,8 @@
     object-fit: cover;
 
 }
+
+/* Mobile */
 
 @media screen and (min-width: 319px) and (max-width: 767px) {
 
@@ -105,7 +121,7 @@
     .info {
         display: flex;
         flex-direction: row;
-        justify-content: left;
+
 
         flex-wrap: wrap;
         column-gap: 13px;
@@ -137,13 +153,21 @@
     }
 
     .rain-diagram img {
-        padding: 24px 0px;
+        height: auto;
         width: calc(100vw - 24px);
 
     }
 
+    .card-rain {
+        height: auto;
+        aspect-ratio: 640/436;
+        width: calc(100vw - 24px);
+        height: auto;
+        border-radius: 30px;
+    }
+
     .rain-diagram p {
-        padding-bottom: 0px;
+        padding: 32px 0px;
     }
 
     .comp-diagram {
@@ -258,7 +282,9 @@
     }
 
     .navbar li {
+        position: relative;
         padding-bottom: 0px;
+        top: +7px;
     }
 
     .highlights-link {
@@ -469,6 +495,303 @@
 
     .arrow {
         gap: 150px;
+    }
+
+}
+
+@media screen and (min-width: 319px) and (max-width: 599px) {
+    .info {
+        justify-content: left;
+    }
+
+}
+
+/* Tablett */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    h4 {
+        line-height: 120%;
+    }
+
+    p,
+    li {
+
+        padding-bottom: 16px;
+
+    }
+
+    .landing-section {
+        padding: 24px 30px 32px 30px
+    }
+
+    .headline {
+        flex-direction: column;
+        padding-bottom: 40px;
+
+    }
+
+    .info {
+        display: flex;
+        gap: 13px;
+        padding-right: 0px;
+    }
+
+    .icon {
+        padding-top: 16px;
+
+    }
+
+    .author {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .author h4 {
+
+        padding-bottom: 8px;
+    }
+
+    .author-text {
+        padding: 16px 8px;
+    }
+
+    .rain-diagram img {
+        height: auto;
+        width: calc(100vw - 24px);
+
+    }
+
+    .card-rain {
+        height: auto;
+        aspect-ratio: 640/436;
+        width: calc(100vw - 60px);
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .rain-diagram p {
+        padding: 32px 0px;
+    }
+
+    .rain-diagram {
+        padding: 0px 30px 32px 30px;
+    }
+
+    .comp-diagram {
+        padding: 0px 30px 24px 30px;
+    }
+
+    .comp-diagram img {
+        width: calc(100vw - 60px);
+    }
+
+    .diagrams {
+
+        flex-direction: column;
+        padding: 0px 0px 32px 0px;
+        align-items: center;
+    }
+
+    .diagrams h3 {
+        text-align: center;
+        padding-bottom: 16px;
+    }
+
+    .diagrams p {
+        padding-bottom: 16px;
+    }
+
+    .activities {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc(100vw - 60px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .expenses {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc(100vw - 60px);
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+    }
+
+    .card {
+        height: auto;
+        aspect-ratio: 519/471;
+        width: calc(100vw - 60px);
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .follow {
+        padding: 0px 15px 119px 15px;
+    }
+
+    .arrow {
+
+        gap: 51px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 150px;
+        padding: 30px 24px 30px 24px;
+    }
+
+    .infos {
+        flex-direction: column;
+        gap: 0px;
+        align-items: start;
+    }
+
+    .footer-links {
+        order: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-links a {
+        padding-bottom: 8px;
+    }
+
+    .copyright {
+        order: 2;
+        padding: 0;
+    }
+
+    .header {
+        height: 80px;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .navbar img {
+        padding-right: 0px;
+        height: 64px;
+        width: 64px;
+    }
+
+    .navbar a {
+        padding-bottom: 0px;
+    }
+
+    .navbar li {
+        position: relative;
+        padding-bottom: 0px;
+        top: +7px;
+    }
+
+    .highlights-link {
+        display: none;
+    }
+
+    .faq-link {
+        display: none;
+    }
+
+    .contact-link {
+        display: none;
+    }
+
+    .copyright p {
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p,
+    li {
+        font-size: 20px;
+    }
+
+    .author {
+        width: 345px;
+    }
+
+    .arrow>img {
+        left: 100px;
+    }
+
+    .arrow {
+        gap: 150px;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+
+    }
+
+    .author {
+        width: 345px;
+    }
+
+    .author h4 {
+        font-size: 16px;
+    }
+
+    .follow h3 {
+        font-size: 18px;
+    }
+
+    .navbar img {
+        padding-right: 0px;
+        height: 56px;
+        width: 56px;
+    }
+
+    .social-media img {
+        height: 24px;
+
+    }
+
+    .copyright img {
+        width: 20px;
+        height: 20px;
     }
 
 }
