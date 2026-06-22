@@ -709,7 +709,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .form-row-checkbox>label {
         font-size: 15px;
     }
-
+    .error {
+    padding-left: 0px;
+    font-size: 14px;
+    color: rgba(185, 16, 47, 1);
+}
 }
 
 /* tablet */
@@ -742,6 +746,10 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .form-row-checkbox>label {
         font-size: 24px;
     }
-
+.error {
+    padding-left: 0px;
+    font-size: 14px;
+    color: rgba(185, 16, 47, 1);
+}
 
 }
