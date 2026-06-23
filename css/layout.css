@@ -58,8 +58,10 @@ li {
 }
 
 main {
-  width: min(100%, 1440px);
+  max-width: 1440px;
+  width: 100%;
   padding: 0px 120px;
+  margin: 0px auto;
 }
 
 .landing-section {
@@ -281,12 +283,15 @@ main {
   .footer {
     padding: 60px max(120px, calc(50% - 720px + 160px));
   }
-
 }
 
 /* Mobile */
 
 @media screen and (min-width: 319px) and (max-width: 499px) {
+
+  main{
+    padding: 0px;
+  }
 
   h4 {
     line-height: 120%;
@@ -496,6 +501,10 @@ main {
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+
+  main{
+    padding: 0px;
+  }
 
   h4 {
     line-height: 120%;
@@ -910,6 +919,10 @@ main {
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
 
+    main{
+    padding: 0px;
+  }
+
   h4 {
     line-height: 120%;
   }
@@ -1148,6 +1161,10 @@ main {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1023px) {
+
+  main{
+    padding: 0px;
+  }
 
   h1 {
     font-size: 52px;
