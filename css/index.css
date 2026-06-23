@@ -81,7 +81,7 @@
 
     animation:
         vorhangEinblenden 0.15s ease-in-out 2.2s forwards,
-        vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
+        vorhangAusblenden 1.3s ease-in-out 3.5s forwards,
         vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
 }
 
@@ -94,7 +94,7 @@
     opacity: 0;
 
     animation:
-        vorhangEinblenden 1.0s ease-in-out 3.5s forwards,
+        vorhangEinblenden 0.8s ease-in-out 3.5s forwards,
         vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
 }
 
