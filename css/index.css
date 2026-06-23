@@ -3,9 +3,6 @@
     width: 100%;
     height: 100dvh;
 
-    background-image: url(../assets/images/index/hero.png);
-    background-size: cover;
-    background-position: center;
     position: relative;
 
     display: flex;
@@ -13,6 +10,25 @@
     align-items: center;
 
     overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../assets/images/index/hero.png);
+    background-size: cover;
+    background-position: top center;
+
+    z-index: 1;
+
+    animation: hintergrundNachOben 1.0s ease-out 3.5s forwards;
 }
 
 .hero-content {
@@ -52,8 +68,7 @@
     z-index: 5;
 
 
-    animation:
-        vorhangAusblenden 0.3s ease-in 1.5s forwards;
+    animation: vorhangAusblenden 0.35s ease-in-out 2.2s forwards;
 }
 
 .layer-2 {
@@ -65,9 +80,9 @@
     opacity: 0;
 
     animation:
-        vorhangEinblenden 0.25s ease-in-out 1.45s forwards,
-        vorhangAusblenden 0.15s ease-in-out 4.0s forwards,
-        vorhangZiehtNachLinks 2.5s ease-out 1.5s forwards;
+        vorhangEinblenden 0.15s ease-in-out 2.2s forwards,
+        vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
+        vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
 }
 
 .layer-3 {
@@ -78,18 +93,17 @@
     z-index: 3;
     opacity: 0;
 
-    transform: translateX(-33%);
-    animation: vorhangEinblenden 0.15s ease-in-out 3.95s forwards;
+    animation:
+        vorhangEinblenden 1.0s ease-in-out 3.5s forwards,
+        vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
 }
 
 .text-block {
     max-width: 345px;
 
-    opacity: 0;
+    opacity: 1;
 
-    animation:
-        textEinblenden 1s ease-out 255ms forwards,
-        textZiehtNachLinks 1.5s ease-out 1.5s forwards;
+    animation: textZiehtNachLinks 1.3s ease-out 2.2s forwards;
 }
 
 .text-block h1 {
@@ -99,6 +113,10 @@
     color: var(--secondary-braun);
 
     margin-bottom: 32px;
+
+    opacity: 0;
+
+    animation: ueberschriftKommtVonUnten 0.6s ease-in-out 255ms forwards;
 }
 
 .text-block p {
@@ -107,6 +125,10 @@
     font-weight: 500;
     color: var(--secondary-braun);
     line-height: 110%;
+
+    opacity: 0;
+
+    animation: textEinblenden 0.8s ease-out 1.4s forwards;
 }
 
 .siegel-wrapper {
@@ -119,7 +141,7 @@
     width: 160px;
     height: 160px;
 
-    animation: siegelEinfliegen 1.0s ease-out 3s forwards;
+    animation: siegelEinfliegen 1.0s ease-out 3.5s forwards;
 }
 
 .siegel-bg,
@@ -155,15 +177,25 @@
     animation: siegelDrehen 25s linear infinite;
 }
 
-@keyframes textEinblenden {
+@keyframes ueberschriftKommtVonUnten {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(40px);
     }
 
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes textEinblenden {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
 
@@ -181,7 +213,7 @@
     }
 
     100% {
-        transform: translateX(-40%);
+        transform: translateX(-33%);
     }
 }
 
@@ -191,7 +223,7 @@
     }
 
     100% {
-        transform: translateX(-135%);
+        transform: translateX(-140%);
     }
 }
 
@@ -230,6 +262,16 @@
 
     to {
         transform: scale(0.8) rotate(360deg);
+    }
+}
+
+@keyframes hintergrundNachOben {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-30px);
     }
 }
 
@@ -486,6 +528,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
 }
+
 input[type="checkbox"]:hover~.cb-box {
     background: rgba(241, 201, 83, 1);
 }
@@ -709,11 +752,12 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .form-row-checkbox>label {
         font-size: 15px;
     }
+
     .error {
-    padding-left: 0px;
-    font-size: 14px;
-    color: rgba(185, 16, 47, 1);
-}
+        padding-left: 0px;
+        font-size: 14px;
+        color: rgba(185, 16, 47, 1);
+    }
 }
 
 /* tablet */
@@ -746,10 +790,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .form-row-checkbox>label {
         font-size: 24px;
     }
-.error {
-    padding-left: 0px;
-    font-size: 14px;
-    color: rgba(185, 16, 47, 1);
-}
+
+    .error {
+        padding-left: 0px;
+        font-size: 14px;
+        color: rgba(185, 16, 47, 1);
+    }
 
 }
