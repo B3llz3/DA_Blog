@@ -58,8 +58,8 @@ li {
 }
 
 main {
-  width: min(100%, 1200px);
-  margin: 0 auto;
+  width: min(100%, 1440px);
+  padding: 0px 120px;
 }
 
 .landing-section {
