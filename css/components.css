@@ -321,26 +321,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (min-width: 900px) and (max-width: 1023px) {
 
   .author {
@@ -371,9 +351,6 @@
     left: 150px;
     top: 0px;
   }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1023px) {
 
   .author {
     width: 30%;
@@ -558,6 +535,25 @@
 
   .arrow-mobile {
     display: block;
+  }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+
+  .follow {
+    padding: 0px 150px 50px 150px;
+  }
+
+  .author{
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+
+  .follow {
+    padding: 0px 315px 80px 315px;
   }
 
 }

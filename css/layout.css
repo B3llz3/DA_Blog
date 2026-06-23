@@ -80,8 +80,7 @@ main {
 .info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-right: 330px;
+  gap: 0px 32px;
   font-size: 16px;
 }
 
@@ -289,7 +288,7 @@ main {
 
 @media screen and (min-width: 319px) and (max-width: 499px) {
 
-  main{
+  main {
     padding: 0px;
   }
 
@@ -317,11 +316,8 @@ main {
   .info {
     display: flex;
     flex-direction: row;
-
-
     flex-wrap: wrap;
-    column-gap: 13px;
-    padding-right: 0px;
+    gap: 0px 13px;
   }
 
   .icon {
@@ -502,7 +498,7 @@ main {
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
 
-  main{
+  main {
     padding: 0px;
   }
 
@@ -530,10 +526,8 @@ main {
   .info {
     display: flex;
     flex-direction: row;
-
-
     flex-wrap: wrap;
-    column-gap: 13px;
+    gap: 0px 13px;
     padding-right: 0px;
   }
 
@@ -919,7 +913,7 @@ main {
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
 
-    main{
+  main {
     padding: 0px;
   }
 
@@ -1162,7 +1156,7 @@ main {
 
 @media screen and (min-width: 900px) and (max-width: 1023px) {
 
-  main{
+  main {
     padding: 0px;
   }
 
@@ -1650,7 +1644,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 13px;
+    gap: 0px 13px;
     padding-right: 0px;
   }
 
@@ -1751,7 +1745,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 13px;
+    gap: 0px 13px;
     padding-right: 0px;
   }
 
@@ -1824,5 +1818,55 @@ main {
 
   .copyright p {
     padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  p,
+  li {
+    font-size: 22px;
+  }
+
+  .navbar img {
+    padding-right: 0px;
+    height: 56px;
+    width: 56px;
+  }
+
+  .social-media img {
+    height: 24px;
+
+  }
+
+  .copyright img {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1109px) {
+
+  .info {
+
+    flex-wrap: wrap;
   }
 }
