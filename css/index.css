@@ -518,6 +518,7 @@ input[type="checkbox"] {
     width: 540px;
     display: flex;
     flex-direction: column;
+    padding-top: 16px;
 
 }
 
@@ -774,13 +775,9 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .checkbox-column {
+        width: 335px;
         padding-top: 8px;
     }
-
-    #policy-text {
-        padding: 0px;
-    }
-
 }
 
 /* tablet */
@@ -823,10 +820,4 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .checkbox-column {
         padding-top: 8px;
     }
-
-    .policy-text {
-        padding: 0px;
-    }
-
-
 }
