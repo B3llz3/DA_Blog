@@ -368,6 +368,7 @@ details[open] .faq--trigger {
 form {
     display: block;
     width: 100%;
+    justify-items: center;
 }
 
 .contact-form {
@@ -447,9 +448,9 @@ label {
 }
 
 .error {
-    padding-left: 180px;
     font-size: 14px;
     color: rgba(185, 16, 47, 1);
+    padding-left: 8px;
 }
 
 .form-row-checkbox {
@@ -463,9 +464,8 @@ label {
 
 }
 
-.form-row-checkbox>p {
+.checkbox-row>p {
     font-size: 15px;
-
 }
 
 .form-group-submit {
@@ -512,6 +512,20 @@ textarea:focus {
 
 input[type="checkbox"] {
     display: none;
+}
+
+.checkbox-column {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .cb-wrap {
@@ -754,10 +768,19 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .error {
-        padding-left: 0px;
+        padding-left: 8px;
         font-size: 14px;
         color: rgba(185, 16, 47, 1);
     }
+
+    .checkbox-column {
+        padding-top: 8px;
+    }
+
+    #policy-text {
+        padding: 0px;
+    }
+
 }
 
 /* tablet */
@@ -792,9 +815,18 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .error {
-        padding-left: 0px;
+        padding-left: 8px;
         font-size: 14px;
         color: rgba(185, 16, 47, 1);
     }
+
+    .checkbox-column {
+        padding-top: 8px;
+    }
+
+    .policy-text {
+        padding: 0px;
+    }
+
 
 }
