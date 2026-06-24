@@ -534,8 +534,8 @@ input[type="checkbox"] {
 }
 
 .cb-box {
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 18px;
     border-radius: 5px;
     border: 2px solid rgba(84, 55, 13, 1);
     background: white;
@@ -557,8 +557,8 @@ input[type="checkbox"]:checked~.cb-box {
 .cb-box::after {
     content: '';
     display: block;
-    width: 6px;
-    height: 11px;
+    width: 4px;
+    height: 8px;
     border: 3px solid transparent;
     border-top: none;
     border-left: none;
