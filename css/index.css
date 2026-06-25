@@ -603,8 +603,10 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 .highlights-slider {
-    width: 1200px;
-    height: 533px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    aspect-ratio: 1200 / 533;
     position: relative;
     overflow: hidden;
 }
@@ -631,13 +633,14 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-right-radius: 100px;
 }
 
 .text-box {
     position: absolute;
-    top: 54px;
-    left: 38px;
-    width: 881px;
+    top: 10%;
+    left: 3%;
+    width: 73%;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
 }
@@ -648,6 +651,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     font-weight: 600;
     color: var(--primary-white);
     padding: 16px 24px 8px 24px;
+    line-height: 100%;
 }
 
 .text-box p {
@@ -660,9 +664,9 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
 .dots {
     position: absolute;
-    left: 50%;
+    left: 42.0845%;
     justify-content: center;
-    bottom: 28px;
+    bottom: 5.748%;
     display: flex;
     gap: 22px;
     z-index: 5;
@@ -695,6 +699,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     color: var(--primary-green);
     font-size: 52px;
     line-height: 120%;
+    padding-bottom: 0px;
 }
 
 .highlights-text p {
@@ -819,5 +824,336 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
     .checkbox-column {
         padding-top: 8px;
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width: 499px) {
+
+    .highlights-rocket {
+        padding-bottom: 32px;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .highlights-text p {
+        display: none;
+    }
+
+    .highlights {
+        padding: 80px 20px 0px 20px;
+    }
+
+    .highlights-slider {
+        aspect-ratio: 335 / 533;
+    }
+
+    .text-box h1 {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .text-box p {
+        padding: 8px 16px 16px 16px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .highlights-rocket {
+        padding-bottom: 32px;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .highlights-text p {
+        display: none;
+    }
+
+    .highlights {
+        padding: 80px 30px 0px 30px;
+    }
+
+    .highlights-slider {
+        aspect-ratio: 335 / 533;
+    }
+
+    .text-box h1 {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .text-box p {
+        padding: 8px 16px 16px 16px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+    .highlights-rocket {
+        padding-bottom: 32px;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .highlights-text p {
+        display: none;
+    }
+
+    .highlights {
+        padding: 80px 30px 0px 30px;
+    }
+
+    .highlights-slider {
+        aspect-ratio: 335 / 533;
+    }
+
+    .text-box h1 {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .text-box p {
+        padding: 8px 16px 16px 16px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+
+    .highlights-rocket {
+        padding-bottom: 32px;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .highlights-text p {
+        display: none;
+    }
+
+    .highlights {
+        padding: 80px 30px 0px 30px;
+    }
+
+    .highlights-slider {
+        aspect-ratio: 335 / 533;
+    }
+
+    .text-box h1 {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .text-box p {
+        padding: 8px 16px 16px 16px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+
+    .highlights-rocket {
+        padding-bottom: 32px;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .highlights-text {
+        padding: 0px 60px;
+    }
+
+    .highlights {
+        padding: 80px 0px 0px 0px;
+    }
+
+    .highlights p {
+        font-size: 20px;
+    }
+
+    .highlights-slider {
+        height: 533px;
+    }
+
+    .text-box h1 {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .text-box p {
+        padding: 8px 16px 16px 16px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1399px) {
+
+    .highlights-rocket {
+        padding-bottom: 32px;
+        justify-content: center;
+        display: flex;
+        gap: 8px;
+    }
+
+    .highlights p {
+        font-size: 22px;
+    }
+
+    .highlights-text {
+        padding: 0px 75px;
+    }
+
+    .highlights {
+        padding: 80px 0px 0px 0px;
+    }
+
+    .highlights-slider {
+        height: 533px;
+    }
+
+    .text-box h1 {
+        padding: 16px 16px 8px 16px;
+    }
+
+    .text-box p {
+        padding: 8px 16px 16px 16px;
+    }
+}
+
+@media screen and (min-width: 319px) and (max-width: 374px) {
+
+    .highlights-rocket img {
+        width: 34px;
+    }
+
+    .highlights-text h1 {
+        font-size: 36px;
+    }
+
+    .dots {
+        left: 17%;
+    }
+
+    .text-box h1 {
+        font-size: 24px;
+    }
+
+    .text-box p {
+        font-size: 16px;
+    }
+
+    .text-box {
+        top: 14.45%;
+        left: 2.18%;
+        width: 91.645%;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 499px) {
+
+    .highlights-text h1 {
+        font-size: 38px;
+    }
+
+    .dots {
+        left: 24%;
+    }
+
+    .text-box h1 {
+        font-size: 30px;
+    }
+
+    .text-box p {
+        font-size: 22px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+    .highlights-text h1 {
+        font-size: 42px;
+    }
+
+    .dots {
+        left: 27%;
+    }
+
+    .text-box h1 {
+        font-size: 34px;
+    }
+
+    .text-box p {
+        font-size: 24px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+
+    .highlights-text h1 {
+        font-size: 48px;
+    }
+
+    .dots {
+        left: 36.5%;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .text-box p {
+        font-size: 32px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+
+    .highlights-text h1 {
+        font-size: 52px;
+    }
+
+    .dots {
+        left: 38.7%;
+    }
+
+    .text-box h1 {
+        font-size: 44px;
+    }
+
+    .text-box p {
+        font-size: 36px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1299px) {
+
+    .highlights-text h1 {
+        font-size: 46px;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1399px) {
+
+    .highlights-text h1 {
+        font-size: 48px;
     }
 }
