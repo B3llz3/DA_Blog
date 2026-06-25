@@ -34,6 +34,10 @@
 .hero-content {
     position: relative;
     z-index: 5;
+
+    max-width: 1440px;
+
+    padding: 0px 120px;
 }
 
 .hero-overlay-container {
@@ -68,7 +72,9 @@
     z-index: 5;
 
 
-    animation: vorhangAusblenden 0.35s ease-in-out 2.2s forwards;
+    animation:
+        vorhangZiehtNachLink 0.15s ease-in-out 1.8s forwards,
+        vorhangAusblenden 0.35s ease-in-out 2.2s forwards;
 }
 
 .layer-2 {
@@ -80,8 +86,8 @@
     opacity: 0;
 
     animation:
-        vorhangEinblenden 0.15s ease-in-out 2.2s forwards,
-        vorhangAusblenden 1.3s ease-in-out 3.5s forwards,
+        vorhangEinblenden 0.15s ease-in-out 2.1s forwards,
+        vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
         vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
 }
 
@@ -94,7 +100,7 @@
     opacity: 0;
 
     animation:
-        vorhangEinblenden 0.8s ease-in-out 3.5s forwards,
+        vorhangEinblenden 0.9s ease-in-out 3.1s forwards,
         vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
 }
 
@@ -133,8 +139,8 @@
 
 .siegel-wrapper {
     position: absolute;
-    left: -40%;
-    bottom: -40%;
+    left: -5%;
+    bottom: -50%;
     z-index: 6;
     opacity: 0;
 
@@ -242,11 +248,7 @@
 @keyframes siegelEinfliegen {
     0% {
         opacity: 0;
-        transform: translateY(150px) scale(0.3);
-    }
-
-    70% {
-        transform: translateY(-10px) scale(1.05);
+        transform: translateY(100px) scale(0.3);
     }
 
     100% {
@@ -797,4 +799,35 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         color: rgba(185, 16, 47, 1);
     }
 
+}
+
+@media (max-width: 1460px) {
+
+    .layer-2,
+    .layer-3 {
+        width: 150%;
+        right: -50%;
+        background-size: auto 100%;
+        background-position: left center;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    @keyframes vorhangZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-25%);
+        }
+
+        60% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(-31%);
+        }
+    }
 }
