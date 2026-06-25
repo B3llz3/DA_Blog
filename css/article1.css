@@ -48,3 +48,29 @@
   margin-block-end: 1em;
   padding-inline-start: 40px;
 }
+
+/* Carousel mobile */
+.carousel--mobile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 440px;
+  width: 350px;
+}
+
+.carousel-slides img {
+  height: 293px;
+  width: 200px;
+}
+
+.carousel-slides {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 899px) {
+  .carousel {
+    /* display: none; */
+  }
+}
