@@ -1159,3 +1159,34 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         font-size: 48px;
     }
 }
+
+@media (max-width: 1460px) {
+
+    .layer-2,
+    .layer-3 {
+        width: 150%;
+        right: -50%;
+        background-size: auto 100%;
+        background-position: left center;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    @keyframes vorhangZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-25%);
+        }
+
+        60% {
+            transform: translateX(-25%);
+        }
+
+        100% {
+            transform: translateX(-31%);
+        }
+    }
+}
