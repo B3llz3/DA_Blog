@@ -885,6 +885,28 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .text-box p {
         padding: 8px 16px 16px 16px;
     }
+
+    .highlights-text h1 {
+        font-size: 42px;
+    }
+
+    .dots {
+        left: 27%;
+    }
+
+    .text-box h1 {
+        font-size: 34px;
+    }
+
+    .text-box p {
+        font-size: 24px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 899px) {
@@ -915,6 +937,28 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .text-box p {
         padding: 8px 16px 16px 16px;
     }
+
+    .highlights-text h1 {
+        font-size: 48px;
+    }
+
+    .dots {
+        left: 36.5%;
+    }
+
+    .text-box h1 {
+        font-size: 40px;
+    }
+
+    .text-box p {
+        font-size: 32px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1023px) {
@@ -944,6 +988,28 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
     .text-box p {
         padding: 8px 16px 16px 16px;
+    }
+
+    .highlights-text h1 {
+        font-size: 52px;
+    }
+
+    .dots {
+        left: 38.7%;
+    }
+
+    .text-box h1 {
+        font-size: 44px;
+    }
+
+    .text-box p {
+        font-size: 36px;
+    }
+
+    .text-box {
+        top: 17.45%;
+        left: 4.18%;
+        width: 91.645%;
     }
 }
 
@@ -979,6 +1045,10 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .text-box p {
         padding: 8px 16px 16px 16px;
     }
+
+    .highlights-text h1 {
+        font-size: 46px;
+    }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1399px) {
@@ -1012,6 +1082,10 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
     .text-box p {
         padding: 8px 16px 16px 16px;
+    }
+
+    .highlights-text h1 {
+        font-size: 48px;
     }
 }
 
@@ -1066,94 +1140,5 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         top: 17.45%;
         left: 4.18%;
         width: 91.645%;
-    }
-}
-
-@media screen and (min-width: 500px) and (max-width: 767px) {
-
-    .highlights-text h1 {
-        font-size: 42px;
-    }
-
-    .dots {
-        left: 27%;
-    }
-
-    .text-box h1 {
-        font-size: 34px;
-    }
-
-    .text-box p {
-        font-size: 24px;
-    }
-
-    .text-box {
-        top: 17.45%;
-        left: 4.18%;
-        width: 91.645%;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 899px) {
-
-    .highlights-text h1 {
-        font-size: 48px;
-    }
-
-    .dots {
-        left: 36.5%;
-    }
-
-    .text-box h1 {
-        font-size: 40px;
-    }
-
-    .text-box p {
-        font-size: 32px;
-    }
-
-    .text-box {
-        top: 17.45%;
-        left: 4.18%;
-        width: 91.645%;
-    }
-}
-
-@media screen and (min-width: 900px) and (max-width: 1023px) {
-
-    .highlights-text h1 {
-        font-size: 52px;
-    }
-
-    .dots {
-        left: 38.7%;
-    }
-
-    .text-box h1 {
-        font-size: 44px;
-    }
-
-    .text-box p {
-        font-size: 36px;
-    }
-
-    .text-box {
-        top: 17.45%;
-        left: 4.18%;
-        width: 91.645%;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1299px) {
-
-    .highlights-text h1 {
-        font-size: 46px;
-    }
-}
-
-@media screen and (min-width: 1300px) and (max-width: 1399px) {
-
-    .highlights-text h1 {
-        font-size: 48px;
     }
 }
