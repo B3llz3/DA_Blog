@@ -13,13 +13,36 @@
 }
 
 .carousel-section {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .carousel-section h3 {
-  margin-bottom: 64px;
+  margin-bottom: clamp(32px, 4vw, 64px);
+  text-align: center;
+}
+.carousel-section .carousel {
+  width: min(92vw, 1300px);
+  height: clamp(240px, 34vw, 440px);
+  padding-left: clamp(16px, 6vw, 100px);
+  padding-right: clamp(16px, 6vw, 100px);
+}
+
+.carousel-section .carousel_element {
+  width: clamp(140px, 20vw, 300px);
+  height: clamp(240px, 34vw, 440px);
+  margin-left: clamp(-80px, -5vw, -36px);
+}
+
+.carousel-section .carousel_element:first-child {
+  margin-left: clamp(16px, 3vw, 48px);
+}
+
+.carousel-section .carousel_element:hover {
+  margin-left: clamp(8px, 1.5vw, 16px);
+  margin-right: clamp(28px, 6vw, 80px);
 }
 
 .text-section--introduction p {
@@ -48,3 +71,503 @@
   margin-block-end: 1em;
   padding-inline-start: 40px;
 }
+
+/* carousel-mobile */
+
+.carousel-section-mobile,
+.carousel-section-mobile * {
+  box-sizing: border-box;
+}
+
+.carousel-section-mobile {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.carousel-state-mobile {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-section-mobile .carousel-mobile {
+  position: relative;
+  width: min(100%, 420px);
+  height: auto;
+  margin: 0 auto;
+  padding: 12px 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  user-select: none;
+}
+
+.carousel-section-mobile .carousel-title-mobile {
+  position: relative;
+  z-index: 2;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.carousel-section-mobile .carousel-stage-mobile {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 332px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 700px;
+}
+
+.carousel-section-mobile .carousel_element-mobile {
+  position: absolute;
+  width: 200px;
+  height: 294px;
+  border-radius: 20px;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 0;
+  transform: translateX(0) rotateY(0deg) scale(0.62);
+  transition:
+    transform 650ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    opacity 650ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    filter 650ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.18);
+}
+
+.carousel-section-mobile .carousel_element-mobile::before {
+  content: none;
+}
+
+.carousel-section-mobile .carousel_element-mobile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.03),
+    rgba(255, 255, 255, 0) 42%,
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.carousel-section-mobile .carousel_img1-mobile {
+  background-image: url("../assets/images/article1/carousel1.jpg");
+  background-position: 24% center;
+}
+
+.carousel-section-mobile .carousel_img2-mobile {
+  background-image: url("../assets/images/article1/carousel2.jpg");
+  background-position: 52% center;
+}
+
+.carousel-section-mobile .carousel_img3-mobile {
+  background-image: url("../assets/images/article1/carousel3.jpg");
+  background-position: center center;
+}
+
+.carousel-section-mobile .carousel_img4-mobile {
+  background-image: url("../assets/images/article1/carousel4.jpg");
+  background-position: 44% center;
+}
+
+.carousel-section-mobile .carousel_img5-mobile {
+  background-image: url("../assets/images/article1/carousel5.jpg");
+  background-position: 50% center;
+}
+
+/* Aktive Karte */
+#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img1-mobile,
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img4-mobile,
+#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img5-mobile {
+  opacity: 1;
+  z-index: 5;
+  transform: translateX(0) rotateY(0deg) scale(1);
+  filter: none;
+}
+
+/* Linke Nachbarkarte: bewusst ohne Wrap-around. Bei Slide 1 gibt es links nichts. */
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img1-mobile,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img4-mobile {
+  opacity: 1;
+  z-index: 4;
+  transform: translateX(-172px) rotateY(45deg) scale(0.74);
+  filter: saturate(0.98);
+}
+
+/* Rechte Nachbarkarte: bewusst ohne Wrap-around. Bei Slide 5 gibt es rechts nichts. */
+#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img4-mobile,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img5-mobile {
+  opacity: 1;
+  z-index: 4;
+  transform: translateX(172px) rotateY(-45deg) scale(0.74);
+  filter: saturate(0.98);
+}
+
+/* Zweite Karte links: ebenfalls linear, nicht zyklisch. */
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img1-mobile,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img3-mobile {
+  opacity: 0;
+  z-index: 2;
+  transform: translateX(-264px) rotateY(0deg) scale(0.68);
+  filter: none;
+}
+
+/* Zweite Karte rechts: ebenfalls linear, nicht zyklisch. */
+#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img4-mobile,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img5-mobile {
+  opacity: 0;
+  z-index: 2;
+  transform: translateX(264px) rotateY(0deg) scale(0.68);
+  filter: none;
+}
+
+/* Unsichtbare Klickflaeche fuer Bildbereich und freien Carousel-Bereich. */
+.carousel-section-mobile .carousel-hit-mobile {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  display: block;
+  cursor: pointer;
+}
+
+.carousel-section-mobile .carousel-hit-mobile-b {
+  display: none;
+}
+
+#beach-carousel-pulse-a:checked ~ .carousel-mobile .carousel-hit-mobile-a {
+  display: none;
+}
+
+#beach-carousel-pulse-a:checked ~ .carousel-mobile .carousel-hit-mobile-b {
+  display: block;
+}
+
+#beach-carousel-pulse-b:checked ~ .carousel-mobile .carousel-hit-mobile-a {
+  display: block;
+}
+
+#beach-carousel-pulse-b:checked ~ .carousel-mobile .carousel-hit-mobile-b {
+  display: none;
+}
+
+.carousel-section-mobile .carousel-dots-mobile {
+  position: relative;
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 42px;
+  margin-top: 18px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  pointer-events: none;
+}
+
+.carousel-section-mobile .carousel-dot-mobile {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+  transition:
+    width 260ms ease,
+    background-color 260ms ease;
+}
+
+/* Grundpunkt */
+.carousel-section-mobile .carousel-dot-mobile::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: var(--background-green);
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* Quadrat, das bei der Animation kurz ueber den Punkt gelegt wird. */
+.carousel-section-mobile .carousel-dot-mobile::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--background-green);
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.58);
+  box-shadow: 0 2px 8px rgba(78, 164, 135, 0.12);
+  animation-duration: 760ms;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+  animation-fill-mode: both;
+  animation-delay: 0ms;
+}
+
+/*
+  Der Click-Trigger:
+  Klick auf den Bildbereich oder freien Carousel-Bereich wechselt zwischen pulse-a und pulse-b.
+  Die Animation laeuft nur, solange eines der Pulse-Radios den Fokus hat.
+  Dadurch loesen spaetere Klicks auf die Navigationspunkte keine Restanimation mehr aus.
+*/
+#beach-carousel-pulse-a:focus ~ .carousel-mobile .carousel-dot-mobile::after {
+  animation-name: square-over-dot-a;
+}
+
+#beach-carousel-pulse-b:focus ~ .carousel-mobile .carousel-dot-mobile::after {
+  animation-name: square-over-dot-b;
+}
+
+/* Aktiver Punkt bleibt als Pille stehen und bekommt kein Quadrat-Overlay. */
+#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel-dot-mobile-1,
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel-dot-mobile-2,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel-dot-mobile-3,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel-dot-mobile-4,
+#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel-dot-mobile-5 {
+  width: 44px;
+  background: var(--primary-green);
+}
+
+#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel-dot-mobile-1::before,
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel-dot-mobile-2::before,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel-dot-mobile-3::before,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel-dot-mobile-4::before,
+#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel-dot-mobile-5::before,
+#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel-dot-mobile-1::after,
+#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel-dot-mobile-2::after,
+#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel-dot-mobile-3::after,
+#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel-dot-mobile-4::after,
+#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel-dot-mobile-5::after {
+  opacity: 0;
+  animation-name: none;
+}
+
+@keyframes square-over-dot-a {
+  0% {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    opacity: 0;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  18% {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    opacity: 0.95;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  52% {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    opacity: 1;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  76% {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    opacity: 0.9;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+
+  100% {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    opacity: 0;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(0.72);
+  }
+}
+
+@keyframes square-over-dot-b {
+  0% {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    opacity: 0;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+
+  18% {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    opacity: 0.95;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  52% {
+    width: 22px;
+    height: 22px;
+    border-radius: 6px;
+    opacity: 1;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  76% {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    opacity: 0.9;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(1.02);
+  }
+
+  100% {
+    width: 12px;
+    height: 12px;
+    border-radius: 999px;
+    opacity: 0;
+    background: var(--background-green);
+    transform: translate(-50%, -50%) scale(0.72);
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-section {
+    display: none;
+  }
+
+  .carousel-section-mobile {
+    display: flex;
+  }
+
+  .carousel-section-mobile .carousel-mobile {
+    width: min(100%, 420px);
+  }
+
+  .carousel-section-mobile .carousel-stage-mobile {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 332px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 700px;
+  }
+}
+
+@media (min-width: 769px) {
+  .carousel-section {
+    display: flex;
+  }
+
+  .carousel-section-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .carousel-section-mobile .carousel-mobile {
+    width: min(100%, 380px);
+  }
+
+  .carousel-section-mobile .carousel-stage-mobile {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 332px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 700px;
+  }
+
+  .carousel-section-mobile .carousel_element-mobile {
+    width: 184px;
+    height: 272px;
+  }
+
+  #beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img1-mobile,
+  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img2-mobile,
+  #beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img3-mobile,
+  #beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img4-mobile {
+    transform: translateX(-146px) rotateY(45deg) scale(0.74);
+  }
+
+  #beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img2-mobile,
+  #beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img3-mobile,
+  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img4-mobile,
+  #beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img5-mobile {
+    transform: translateX(146px) rotateY(-45deg) scale(0.74);
+  }
+
+  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img1-mobile,
+  #beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img2-mobile,
+  #beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img3-mobile {
+    transform: translateX(-224px) rotateY(0deg) scale(0.68);
+  }
+
+  #beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img3-mobile,
+  #beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img4-mobile,
+  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img5-mobile {
+    transform: translateX(224px) rotateY(0deg) scale(0.68);
+  }
+
+  .carousel-section-mobile .carousel-dot-mobile,
+  .carousel-section-mobile .carousel-dot-mobile::before {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-section-mobile .carousel_element-mobile,
+  .carousel-section-mobile .carousel-dot-mobile,
+  .carousel-section-mobile .carousel-dot-mobile::after,
+  .carousel-section .carousel_element {
+    transition: none;
+    animation: none;
+  }
+}
+
+
+
+
+
+

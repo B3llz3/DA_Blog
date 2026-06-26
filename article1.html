@@ -84,13 +84,123 @@
         </div>
       </section>
       <section class="carousel-section">
-        <h3>TOP 5 Strandreiseziele für 2026</h3>
+        <h3 class="carousel-title-mobile">TOP 5 Strandreiseziele für 2026</h3>
         <div class="carousel">
           <div class="carousel_element carousel_img1"></div>
           <div class="carousel_element carousel_img2"></div>
           <div class="carousel_element carousel_img3"></div>
           <div class="carousel_element carousel_img4"></div>
           <div class="carousel_element carousel_img5"></div>
+        </div>
+      </section>
+      <section class="carousel-section-mobile" aria-label="CSS-only Carousel">
+        <!--
+            Slide-Zustand: steuert die aktive Karte und den aktiven Punkt.
+            Wichtig: IDs und name-Werte muessen eindeutig bleiben, falls du mehrere Carousels nutzt.
+          -->
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-1"
+          checked
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-2"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-3"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-4"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-5"
+        />
+
+        <!--
+            Pulse-Zustand: wird durch Klicks auf den Bildbereich / freien Carousel-Bereich getoggelt.
+            Zwei Radios sind noetig, damit die CSS-Animation bei jedem Klick neu startet.
+          -->
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-pulse"
+          id="beach-carousel-pulse-a"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-pulse"
+          id="beach-carousel-pulse-b"
+        />
+
+        <div class="carousel-mobile">
+          <!--
+              Unsichtbare Klickflaeche fuer Bildbereich und freien Carousel-Bereich.
+              Die Punkte liegen mit hoeherem z-index darueber. Deshalb loesen Punkt-Klicks
+              keine Button-Animation aus.
+            -->
+          <label
+            class="carousel-hit-mobile carousel-hit-mobile-a"
+            for="beach-carousel-pulse-a"
+            aria-label="Buttonanimation ausloesen"
+          ></label>
+          <label
+            class="carousel-hit-mobile carousel-hit-mobile-b"
+            for="beach-carousel-pulse-b"
+            aria-label="Buttonanimation ausloesen"
+          ></label>
+
+          <h3 class="carousel-title-mobile">TOP 5 Strandreiseziele für 2026</h3>
+
+          <div class="carousel-stage-mobile" aria-hidden="true">
+            <div class="carousel_element-mobile carousel_img1-mobile" data-number="01"></div>
+            <div class="carousel_element-mobile carousel_img2-mobile" data-number="02"></div>
+            <div class="carousel_element-mobile carousel_img3-mobile" data-number="03"></div>
+            <div class="carousel_element-mobile carousel_img4-mobile" data-number="04"></div>
+            <div class="carousel_element-mobile carousel_img5-mobile" data-number="05"></div>
+          </div>
+
+          <nav class="carousel-dots-mobile" aria-label="Carousel Navigation">
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-1"
+              for="beach-carousel-slide-1"
+              aria-label="Slide 1 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-2"
+              for="beach-carousel-slide-2"
+              aria-label="Slide 2 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-3"
+              for="beach-carousel-slide-3"
+              aria-label="Slide 3 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-4"
+              for="beach-carousel-slide-4"
+              aria-label="Slide 4 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-5"
+              for="beach-carousel-slide-5"
+              aria-label="Slide 5 anzeigen"
+            ></label>
+          </nav>
         </div>
       </section>
       <section class="text-section">
@@ -236,3 +346,5 @@
     </footer>
   </body>
 </html>
+
+
