@@ -140,7 +140,7 @@ main {
   color: var(--primary-white);
 }
 
-.navbar a:visited {
+.navbar ul>a:visited {
   color: var(--primary-gelb);
 }
 
