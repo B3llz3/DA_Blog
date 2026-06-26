@@ -135,7 +135,6 @@
 
 .protip-box li {
   font-family: "Palanquin";
-  font-size: 24px;
   color: var(--primary-black-text);
   line-height: 120%;
 }
@@ -500,7 +499,7 @@
   }
 
   .author {
-    height: 380px;
+    height: auto;
   }
 }
 
@@ -511,3 +510,5 @@
   }
 
 }
+
+
