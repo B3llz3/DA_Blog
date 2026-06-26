@@ -12,19 +12,23 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html"
-        ><img src="./assets/icons/travelblog-logo.svg" alt="Travel Blog Logo"
-      /></a>
       <nav class="navbar">
         <ul>
+          <li>
+            <a href="index.html#hero"
+              ><img
+                src="./assets/icons/travelblog-logo.svg"
+                alt="Travel Blog Logo"
+            /></a>
+          </li>
           <li class="highlights-link">
-            <a href="./index.html#highlights">Highlights</a>
+            <a href="index.html#highlights">Highlights</a>
           </li>
           <li class="faq-link">
-            <a href="./index.html#faq-section">FAQ</a>
+            <a href="index.html#faq-section">FAQ</a>
           </li>
           <li class="contact-link">
-            <a href="./index.html#contact-form">Contact</a>
+            <a href="index.html#contact-form">Contact</a>
           </li>
         </ul>
       </nav>
@@ -35,7 +39,7 @@
           <div>
             <h2>Wo der Ozean auf deine Seele trifft</h2>
 
-            <h1>Die atemberaubendsten Strände der Welts</h1>
+            <h1>Die atemberaubendsten Strände der Welt</h1>
 
             <h4>
               Von puderweichem weißen Sand bis hin zu dramatischen Küstenlinien,
@@ -84,13 +88,138 @@
         </div>
       </section>
       <section class="carousel-section">
-        <h3>TOP 5 Strandreiseziele für 2026</h3>
+        <h3 class="carousel-title-mobile">TOP 5 Strandreiseziele für 2026</h3>
         <div class="carousel">
           <div class="carousel_element carousel_img1"></div>
           <div class="carousel_element carousel_img2"></div>
           <div class="carousel_element carousel_img3"></div>
           <div class="carousel_element carousel_img4"></div>
           <div class="carousel_element carousel_img5"></div>
+        </div>
+      </section>
+      <section class="carousel-section-mobile" aria-label="CSS-only Carousel">
+        <!--
+            Slide-Zustand: steuert die aktive Karte und den aktiven Punkt.
+            Wichtig: IDs und name-Werte muessen eindeutig bleiben, falls du mehrere Carousels nutzt.
+          -->
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-1"
+          checked
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-2"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-3"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-4"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-slides"
+          id="beach-carousel-slide-5"
+        />
+
+        <!--
+            Pulse-Zustand: wird durch Klicks auf den Bildbereich / freien Carousel-Bereich getoggelt.
+            Zwei Radios sind noetig, damit die CSS-Animation bei jedem Klick neu startet.
+          -->
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-pulse"
+          id="beach-carousel-pulse-a"
+        />
+        <input
+          class="carousel-state-mobile"
+          type="radio"
+          name="beach-carousel-pulse"
+          id="beach-carousel-pulse-b"
+        />
+
+        <div class="carousel-mobile">
+          <!--
+              Unsichtbare Klickflaeche fuer Bildbereich und freien Carousel-Bereich.
+              Die Punkte liegen mit hoeherem z-index darueber. Deshalb loesen Punkt-Klicks
+              keine Button-Animation aus.
+            -->
+
+          <h3 class="carousel-title-mobile">TOP 5 Strandreiseziele für 2026</h3>
+
+          <div class="carousel-stage-mobile" aria-hidden="true">
+            <label
+              class="carousel-hit-mobile carousel-hit-mobile-a"
+              for="beach-carousel-pulse-a"
+              aria-label="Buttonanimation ausloesen"
+            ></label>
+            <label
+              class="carousel-hit-mobile carousel-hit-mobile-b"
+              for="beach-carousel-pulse-b"
+              aria-label="Buttonanimation ausloesen"
+            ></label>
+            <div
+              class="carousel_element-mobile carousel_img1-mobile"
+              data-number="01"
+            ></div>
+            <div
+              class="carousel_element-mobile carousel_img2-mobile"
+              data-number="02"
+            ></div>
+            <div
+              class="carousel_element-mobile carousel_img3-mobile"
+              data-number="03"
+            ></div>
+            <div
+              class="carousel_element-mobile carousel_img4-mobile"
+              data-number="04"
+            ></div>
+            <div
+              class="carousel_element-mobile carousel_img5-mobile"
+              data-number="05"
+            ></div>
+          </div>
+
+          <nav class="carousel-dots-mobile" aria-label="Carousel Navigation">
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-1"
+              for="beach-carousel-slide-1"
+              aria-label="Slide 1 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-2"
+              for="beach-carousel-slide-2"
+              aria-label="Slide 2 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-3"
+              for="beach-carousel-slide-3"
+              aria-label="Slide 3 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-4"
+              for="beach-carousel-slide-4"
+              aria-label="Slide 4 anzeigen"
+            ></label>
+            <label
+              class="carousel-dot-mobile carousel-dot-mobile-5"
+              for="beach-carousel-slide-5"
+              aria-label="Slide 5 anzeigen"
+            ></label>
+          </nav>
         </div>
       </section>
       <section class="text-section">
@@ -114,32 +243,22 @@
           </p>
         </div>
         <div class="text-section--detail">
-          <p class="text-black">
+          <p>
             Nachfolgend stellen wir fünf der bekanntesten und beliebtesten
             Strände der Welt vor:
           </p>
-          <ol class="text-black">
+          <ol>
+            <li><b>Bay Beach</b> – Providenciales, Turks- und Caicosinseln</li>
             <li>
-              <p><b>Bay Beach</b> – Providenciales, Turks- und Caicosinseln</p>
-            </li>
-            <li>
-              <p>
                 <b>Whitehaven Beach</b> – Whitsunday Island, Queensland,
                 Australien
-              </p>
-            </li>
+              </li>
+            <li><b>Anse Source d’Argent</b> – La Digue, Seychellen</li>
+            <li><b>Baía do Sancho </b> – Fernando de Noronha, Brasilien</li>
             <li>
-              <p><b>Anse Source d’Argent</b> – La Digue, Seychellen</p>
-            </li>
-            <li>
-              <p><b>Baía do Sancho </b> – Fernando de Noronha, Brasilien</p>
-            </li>
-            <li>
-              <p>
                 <b>Navagio Beach (Shipwreck Beach) </b> – Zakynthos,
                 Griechenland
-              </p>
-            </li>
+              </li>
           </ol>
         </div>
       </section>
@@ -151,7 +270,7 @@
               alt="gelbe Glühbirne"
             />Pro Tipps
           </div>
-          <ol class="text-black">
+          <ol>
             <li>
               Trage bereits 20 bis 30 Minuten vor dem Aufenthalt am Strand eine
               wasserfeste Sonnencreme mit hohem Lichtschutzfaktor auf.
@@ -216,8 +335,10 @@
           <img src="./assets/icons/copyright_icon.svg" alt="Copyright Icon" />
           <p>Travel Blog 2026</p>
         </div>
-        <a href="">Imprint</a>
-        <a href="">Cookie Preferences</a>
+        <div class="footer-links">
+          <a href="">Imprint</a>
+          <a href="">Cookie Preferences</a>
+        </div>
       </div>
       <div class="social-media">
         <a href="https://www.tiktok.com/"
@@ -234,5 +355,23 @@
         /></a>
       </div>
     </footer>
+    <section class="sticky-footbar">
+      <div class="footbar">
+        <a href="./index.html"
+          ><img src="./assets/icons/home.svg" alt="home"
+        /></a>
+        <a href="./index.html#highlight"
+          ><img src="./assets/icons/rocket_launch_green.svg" alt="rocket"
+        /></a>
+        <a href="./index.html#faq-section"
+          ><img src="./assets/icons/live_help.svg" alt="help"
+        /></a>
+        <a href="./index.html#contact-form"
+          ><img src="./assets/icons/person_pin_green.svg" alt="person"
+        /></a>
+      </div>
+    </section>
   </body>
 </html>
+
+
