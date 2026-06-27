@@ -744,7 +744,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .contact-form {
-        padding: 80px 20px;
+        padding: 80px 0px;
     }
 
     .contact-text>h2 {
@@ -792,7 +792,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .contact-form {
-        padding: 80px 20px;
+        padding: 80px 0px;
     }
 
     .contact-text>h2 {
@@ -845,7 +845,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .highlights {
-        padding: 80px 20px 0px 20px;
+        padding: 80px 0px 0px;
     }
 
     .highlights-slider {
@@ -875,7 +875,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .highlights {
-        padding: 80px 30px 0px 30px;
+        padding: 80px 0px 0px;
     }
 
     .highlights-slider {
@@ -927,7 +927,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .highlights {
-        padding: 80px 30px 0px 30px;
+        padding: 80px 0px 0px;
     }
 
     .highlights-slider {
@@ -979,7 +979,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .highlights {
-        padding: 80px 30px 0px 30px;
+        padding: 80px 0px 0px;
     }
 
     .highlights-slider {
