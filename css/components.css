@@ -171,6 +171,7 @@
 .sticky-footbar {
   position: sticky;
   bottom: 0;
+  z-index: 99;
 }
 
 .footbar {
