@@ -139,7 +139,7 @@ main {
   color: var(--primary-white);
 }
 
-.navbar ul>a:visited {
+.navbar a:visited {
   color: var(--primary-gelb);
 }
 
