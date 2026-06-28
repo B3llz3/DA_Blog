@@ -11,9 +11,24 @@ iframe {
 }
 
 .stichpunkte {
-    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
     font-weight: 400;
     font-family: 'Palanquin';
+    list-style: none;
+}
+
+.stichpunkte>li {
+    position: relative;
+    padding-left: 1rem;
+}
+
+.stichpunkte>li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
 }
 
 /* footcontent */
@@ -101,61 +116,78 @@ iframe {
     .video {
         padding: 20px 15px;
     }
+
+    .stichpunkte>li {
+        padding-bottom: 0px;
+    }
+
+    .text-block>li {
+        padding-bottom: 0px;
+    }
 }
 
-/* mobile */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-    h1 {
-        font-size: 40px;
-        line-height: 1;
-    }
+    /* mobile */
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        h1 {
+            font-size: 40px;
+            line-height: 1;
+        }
 
-    h2 {
-        font-size: 20px;
-        line-height: 1;
-    }
+        h2 {
+            font-size: 20px;
+            line-height: 1;
+        }
 
-    h3 {
-        font-size: 18px;
-    }
+        h3 {
+            font-size: 18px;
+        }
 
-    p {
-        font-size: 16px;
-        color: rgba(84, 55, 13, 1);
-    }
-    main {
-        padding: 15px;
-    }
+        p {
+            font-size: 16px;
+            color: rgba(84, 55, 13, 1);
+        }
 
-    .headcontent {
-        flex-direction: column;
+        main {
+            padding: 15px;
+        }
+
+        .headcontent {
+            flex-direction: column;
+        }
+
+
+        .maincontent {
+            flex-direction: column;
+            padding: 0px 15px;
+        }
+
+        .video {
+            padding: 0px 15px 24px;
+        }
+
+        iframe {
+            height: 190px;
+            width: auto;
+        }
+
+        .stichpunkte>li {
+            padding-bottom: 0px;
+        }
+
+        .text-block>li {
+            padding-bottom: 0px;
+        }
+
+        .footer {
+            padding: 20px;
+        }
+
+        .infos {
+            flex-direction: column;
+        }
+
+        .footbar {
+            display: flex;
+        }
+
     }
-
-
-    .maincontent {
-        flex-direction: column;
-        padding: 0px 15px;
-    }
-
-    .video {
-        padding: 0px 15px 24px;
-    }
-
-    iframe {
-        height: 190px;
-        width: auto;
-    }
-
-    .footer {
-        padding: 20px;
-    }
-
-    .infos {
-        flex-direction: column;
-    }
-
-    .footbar {
-        display: flex;
-    }
-
-}
