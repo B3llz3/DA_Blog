@@ -139,10 +139,6 @@ main {
   color: var(--primary-white);
 }
 
-.navbar a:active {
-  color: var(--primary-gelb);
-}
-
 .highlights-link a::after {
   content: "";
   position: absolute;
@@ -219,7 +215,19 @@ main {
 .contact-link a:hover::after {
   opacity: 1;
   transform: scaleX(1) rotate(1deg);
+} 
+
+.navbar a:active {
+  color: var(--primary-gelb);
 }
+
+.highlights-link a:active::after,
+.faq-link a:active::after,
+.contact-link a:active::after {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
 
 .footer {
   display: flex;
