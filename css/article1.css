@@ -12,6 +12,10 @@
   margin-bottom: 88px;
 }
 
+.headline {
+  padding-bottom: 0px;
+}
+
 .carousel-section {
   position: relative;
   z-index: 0;
@@ -675,6 +679,10 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .headline {
+    padding-bottom: 0px;
+  }
+
   .text-section--detail {
     margin-left: 0px;
     margin-right: 0px;
