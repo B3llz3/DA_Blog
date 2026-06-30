@@ -406,7 +406,7 @@
   }
 
   .follow {
-    padding: 0px 0px 119px ;
+    padding: 0px 0px 119px;
   }
 
   .arrow-desktop {
@@ -504,5 +504,26 @@
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
   .follow {
     padding: 0px 315px 80px 315px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .protip-label {
+    top: -80px;
+    left: 0px;
+  }
+
+  .protip-box {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 32px;
+    margin-top: 48px;
+  }
+
+  .protip-box ol {
+    padding-left: 16px;
+  }
+  .protip-section {
+    margin-top: 116px;
   }
 }
