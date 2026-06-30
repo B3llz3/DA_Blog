@@ -674,7 +674,24 @@
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .text-section--detail {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 
+  .text-section--detail ol {
+    padding-inline-start: 0px;
+  }
 
+  .text-section--detail li {
+    margin-left: 16px;
+  }
 
-
+  .carousel-section,
+  .final-text-section,
+  .protip-section,
+  .text-section--introduction {
+    margin-bottom: 32px;
+  }
+}
