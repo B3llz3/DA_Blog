@@ -914,6 +914,15 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 319px) and (max-width: 499px) {
+    @keyframes vorhangZiehtNachOben {
+        0% {
+            transform: translateX(-10%) translateY(0) scale(1);
+        }
+
+        100% {
+            transform: translateX(-30%) translateY(-20%) scale(0.6);
+        }
+    }
 
     .highlights-rocket {
         padding-bottom: 32px;
@@ -998,66 +1007,18 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
-    .hero-section {
-        justify-content: center;
-    }
-
     .hero-section::before {
-        background-image: url(../assets/images/index/hero.png);
-
-        animation:
-            hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards,
-            hintergrundZoomMobile2 0.8s ease-out 3.4s forwards;
-    }
-
-    .text-block {
-        animation: textZiehtNachLinks 1.3s ease-out 2.2s forwards;
+        background-image: url(../assets/images/index/hero-mobile.png);
+        background-position: left;
     }
 
     .layer-2 {
-        background-image: url('../assets/images/index/yellow-curtain-2.svg');
-        background-size: auto 100%;
-        width: 120%;
-
-        animation:
-            vorhangEinblenden 0.15s ease-in-out 2.0s forwards,
-            vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
-            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
-    }
-
-    .layer-3 {
         background-image: url('../assets/images/index/yellow-curtain-3.svg');
-
-        animation:
-            vorhangEinblenden 0.9s ease-in-out 3.1s forwards,
-            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
     }
 
     .siegel-wrapper {
-        left: 15%;
-        bottom: -45%;
-
-        animation: siegelEinfliegen 1.0s ease-out 3.5s forwards;
-    }
-
-    @keyframes textZiehtNachLinks {
-        0% {
-            transform: translateX(0);
-        }
-
-        100% {
-            transform: translateX(-85%);
-        }
-    }
-
-    @keyframes hintergrundZoomMobile2 {
-        0% {
-            transform: translateY(0px);
-        }
-
-        100% {
-            transform: translateY(-20px);
-        }
+        left: 55%;
+        bottom: 35%;
     }
 
     .highlights-text h1 {
@@ -1152,7 +1113,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .text-block h1 {
-        font-size: 52px;
+        font-size: 48px;
 
         margin-bottom: 16px;
 
@@ -1194,7 +1155,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         }
 
         100% {
-            transform: translateX(-85%);
+            transform: translateX(-70%);
         }
     }
 
@@ -1476,7 +1437,6 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         font-size: 52px;
 
         margin-bottom: 16px;
-
     }
 
     .text-block p {
@@ -1484,7 +1444,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 
     .siegel-wrapper {
-        left: 5%;
+        left: 15%;
         bottom: -35%;
     }
 
@@ -1494,11 +1454,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         }
 
         30% {
-            transform: translateX(-18%);
+            transform: translateX(-20%);
         }
 
         60% {
-            transform: translateX(-18%);
+            transform: translateX(-20%);
         }
 
         100% {
@@ -1553,6 +1513,14 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1399px) {
+    .text-block {
+        padding-left: 28px;
+    }
+
+    .siegel-wrapper {
+        left: -30%;
+        bottom: -35%;
+    }
 
     .highlights-rocket {
         padding-bottom: 32px;
@@ -1590,14 +1558,16 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1899px) {
+    .siegel-wrapper {
+        left: -25%;
+        bottom: -55%;
+    }
+}
+
 @media screen and (min-width: 1441px) {
     .hero-section {
         height: 700px;
-    }
-
-    .siegel-wrapper {
-        left: -40%;
-        bottom: -55%;
     }
 
     @keyframes vorhangZiehtNachLinks {
@@ -1628,4 +1598,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         }
     }
 
+}
+
+@media screen and (min-width: 1900px) {
+    .siegel-wrapper {
+        left: -45%;
+        bottom: -55%;
+    }
 }
