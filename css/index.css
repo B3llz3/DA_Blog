@@ -1021,6 +1021,16 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         bottom: 35%;
     }
 
+    @keyframes vorhangZiehtNachOben {
+        0% {
+            transform: translateX(-10%) translateY(0) scale(1);
+        }
+
+        100% {
+            transform: translateX(-35%) translateY(-25%) scale(0.7);
+        }
+    }
+
     .highlights-text h1 {
         font-size: 42px;
     }
