@@ -1606,15 +1606,15 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         }
 
         30% {
-            transform: translateX(-20%);
+            transform: translateX(-18%);
         }
 
         60% {
-            transform: translateX(-20%);
+            transform: translateX(-18%);
         }
 
         100% {
-            transform: translateX(-25%);
+            transform: translateX(-23%);
         }
     }
 
