@@ -7,7 +7,6 @@
 .carousel-section,
 .text-section,
 .final-text-section,
-.protip-section,
 .text-section--introduction {
   margin-bottom: 88px;
 }
@@ -28,6 +27,7 @@
 .carousel-section h3 {
   margin-bottom: clamp(32px, 4vw, 64px);
 }
+
 .carousel-section .carousel {
   width: min(92vw, 1300px);
   height: clamp(240px, 34vw, 440px);
@@ -56,6 +56,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   p {
     text-align: left;
   }
@@ -162,12 +163,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.03),
-    rgba(255, 255, 255, 0) 42%,
-    rgba(0, 0, 0, 0.1)
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.03),
+      rgba(255, 255, 255, 0) 42%,
+      rgba(0, 0, 0, 0.1));
 }
 
 .carousel-section-mobile .carousel_img1-mobile {
@@ -197,85 +196,60 @@
 
 /* Fallback: Falls beim Wechsel vom grossen zum kleinen Layout kein Slide-Radio aktiv bleibt,
    wird automatisch wieder der erste mobile Slide dargestellt. */
-@supports selector(
-  .carousel-section-mobile:not(:has(#beach-carousel-slide-1:checked))
-) {
-  .carousel-section-mobile:not(
-      :has(
-        #beach-carousel-slide-1:checked,
-        #beach-carousel-slide-2:checked,
-        #beach-carousel-slide-3:checked,
-        #beach-carousel-slide-4:checked,
-        #beach-carousel-slide-5:checked
-      )
-    )
-    .carousel_img1-mobile {
+@supports selector(.carousel-section-mobile:not(:has(#beach-carousel-slide-1:checked))) {
+
+  .carousel-section-mobile:not( :has(#beach-carousel-slide-1:checked,
+      #beach-carousel-slide-2:checked,
+      #beach-carousel-slide-3:checked,
+      #beach-carousel-slide-4:checked,
+      #beach-carousel-slide-5:checked)) .carousel_img1-mobile {
     opacity: 1;
     z-index: 5;
     transform: translateX(0) rotateY(0deg) scale(1);
     filter: none;
   }
 
-  .carousel-section-mobile:not(
-      :has(
-        #beach-carousel-slide-1:checked,
-        #beach-carousel-slide-2:checked,
-        #beach-carousel-slide-3:checked,
-        #beach-carousel-slide-4:checked,
-        #beach-carousel-slide-5:checked
-      )
-    )
-    .carousel_img2-mobile {
+  .carousel-section-mobile:not( :has(#beach-carousel-slide-1:checked,
+      #beach-carousel-slide-2:checked,
+      #beach-carousel-slide-3:checked,
+      #beach-carousel-slide-4:checked,
+      #beach-carousel-slide-5:checked)) .carousel_img2-mobile {
     opacity: 1;
     z-index: 4;
     transform: translateX(172px) rotateY(-45deg) scale(0.74);
     filter: saturate(0.98);
   }
 
-  .carousel-section-mobile:not(
-      :has(
-        #beach-carousel-slide-1:checked,
-        #beach-carousel-slide-2:checked,
-        #beach-carousel-slide-3:checked,
-        #beach-carousel-slide-4:checked,
-        #beach-carousel-slide-5:checked
-      )
-    )
-    .carousel-dot-mobile-1 {
+  .carousel-section-mobile:not( :has(#beach-carousel-slide-1:checked,
+      #beach-carousel-slide-2:checked,
+      #beach-carousel-slide-3:checked,
+      #beach-carousel-slide-4:checked,
+      #beach-carousel-slide-5:checked)) .carousel-dot-mobile-1 {
     width: 44px;
     background: var(--primary-green);
   }
 
-  .carousel-section-mobile:not(
-      :has(
-        #beach-carousel-slide-1:checked,
-        #beach-carousel-slide-2:checked,
-        #beach-carousel-slide-3:checked,
-        #beach-carousel-slide-4:checked,
-        #beach-carousel-slide-5:checked
-      )
-    )
-    .carousel-dot-mobile-1::before,
-  .carousel-section-mobile:not(
-      :has(
-        #beach-carousel-slide-1:checked,
-        #beach-carousel-slide-2:checked,
-        #beach-carousel-slide-3:checked,
-        #beach-carousel-slide-4:checked,
-        #beach-carousel-slide-5:checked
-      )
-    )
-    .carousel-dot-mobile-1::after {
+  .carousel-section-mobile:not( :has(#beach-carousel-slide-1:checked,
+      #beach-carousel-slide-2:checked,
+      #beach-carousel-slide-3:checked,
+      #beach-carousel-slide-4:checked,
+      #beach-carousel-slide-5:checked)) .carousel-dot-mobile-1::before,
+  .carousel-section-mobile:not( :has(#beach-carousel-slide-1:checked,
+      #beach-carousel-slide-2:checked,
+      #beach-carousel-slide-3:checked,
+      #beach-carousel-slide-4:checked,
+      #beach-carousel-slide-5:checked)) .carousel-dot-mobile-1::after {
     opacity: 0;
     animation-name: none;
   }
 }
+
 /* Aktive Karte */
-#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img1-mobile,
-#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img2-mobile,
-#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img3-mobile,
-#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img4-mobile,
-#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img5-mobile {
+#beach-carousel-slide-1:checked~.carousel-mobile .carousel_img1-mobile,
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel_img4-mobile,
+#beach-carousel-slide-5:checked~.carousel-mobile .carousel_img5-mobile {
   opacity: 1;
   z-index: 5;
   transform: translateX(0) rotateY(0deg) scale(1);
@@ -283,10 +257,10 @@
 }
 
 /* Linke Nachbarkarte: bewusst ohne Wrap-around. Bei Slide 1 gibt es links nichts. */
-#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img1-mobile,
-#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img2-mobile,
-#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img3-mobile,
-#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img4-mobile {
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel_img1-mobile,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-5:checked~.carousel-mobile .carousel_img4-mobile {
   opacity: 1;
   z-index: 4;
   transform: translateX(-172px) rotateY(45deg) scale(0.74);
@@ -294,10 +268,10 @@
 }
 
 /* Rechte Nachbarkarte: bewusst ohne Wrap-around. Bei Slide 5 gibt es rechts nichts. */
-#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img2-mobile,
-#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img3-mobile,
-#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img4-mobile,
-#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img5-mobile {
+#beach-carousel-slide-1:checked~.carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel_img4-mobile,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel_img5-mobile {
   opacity: 1;
   z-index: 4;
   transform: translateX(172px) rotateY(-45deg) scale(0.74);
@@ -305,9 +279,9 @@
 }
 
 /* Zweite Karte links: ebenfalls linear, nicht zyklisch. */
-#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img1-mobile,
-#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img2-mobile,
-#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img3-mobile {
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel_img1-mobile,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel_img2-mobile,
+#beach-carousel-slide-5:checked~.carousel-mobile .carousel_img3-mobile {
   opacity: 0;
   z-index: 2;
   transform: translateX(-264px) rotateY(0deg) scale(0.68);
@@ -315,9 +289,9 @@
 }
 
 /* Zweite Karte rechts: ebenfalls linear, nicht zyklisch. */
-#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img3-mobile,
-#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img4-mobile,
-#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img5-mobile {
+#beach-carousel-slide-1:checked~.carousel-mobile .carousel_img3-mobile,
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel_img4-mobile,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel_img5-mobile {
   opacity: 0;
   z-index: 2;
   transform: translateX(264px) rotateY(0deg) scale(0.68);
@@ -337,19 +311,19 @@
   display: none;
 }
 
-#beach-carousel-pulse-a:checked ~ .carousel-mobile .carousel-hit-mobile-a {
+#beach-carousel-pulse-a:checked~.carousel-mobile .carousel-hit-mobile-a {
   display: none;
 }
 
-#beach-carousel-pulse-a:checked ~ .carousel-mobile .carousel-hit-mobile-b {
+#beach-carousel-pulse-a:checked~.carousel-mobile .carousel-hit-mobile-b {
   display: block;
 }
 
-#beach-carousel-pulse-b:checked ~ .carousel-mobile .carousel-hit-mobile-a {
+#beach-carousel-pulse-b:checked~.carousel-mobile .carousel-hit-mobile-a {
   display: block;
 }
 
-#beach-carousel-pulse-b:checked ~ .carousel-mobile .carousel-hit-mobile-b {
+#beach-carousel-pulse-b:checked~.carousel-mobile .carousel-hit-mobile-b {
   display: none;
 }
 
@@ -420,54 +394,34 @@
   Die Animation laeuft nur, solange eines der Pulse-Radios den Fokus hat.
   Dadurch loesen spaetere Klicks auf die Navigationspunkte keine Restanimation mehr aus.
 */
-#beach-carousel-pulse-a:focus ~ .carousel-mobile .carousel-dot-mobile::after {
+#beach-carousel-pulse-a:focus~.carousel-mobile .carousel-dot-mobile::after {
   animation-name: square-over-dot-a;
 }
 
-#beach-carousel-pulse-b:focus ~ .carousel-mobile .carousel-dot-mobile::after {
+#beach-carousel-pulse-b:focus~.carousel-mobile .carousel-dot-mobile::after {
   animation-name: square-over-dot-b;
 }
 
 /* Aktiver Punkt bleibt als Pille stehen und bekommt kein Quadrat-Overlay. */
-#beach-carousel-slide-1:checked ~ .carousel-mobile .carousel-dot-mobile-1,
-#beach-carousel-slide-2:checked ~ .carousel-mobile .carousel-dot-mobile-2,
-#beach-carousel-slide-3:checked ~ .carousel-mobile .carousel-dot-mobile-3,
-#beach-carousel-slide-4:checked ~ .carousel-mobile .carousel-dot-mobile-4,
-#beach-carousel-slide-5:checked ~ .carousel-mobile .carousel-dot-mobile-5 {
+#beach-carousel-slide-1:checked~.carousel-mobile .carousel-dot-mobile-1,
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel-dot-mobile-2,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel-dot-mobile-3,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel-dot-mobile-4,
+#beach-carousel-slide-5:checked~.carousel-mobile .carousel-dot-mobile-5 {
   width: 44px;
   background: var(--primary-green);
 }
 
-#beach-carousel-slide-1:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-1::before,
-#beach-carousel-slide-2:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-2::before,
-#beach-carousel-slide-3:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-3::before,
-#beach-carousel-slide-4:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-4::before,
-#beach-carousel-slide-5:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-5::before,
-#beach-carousel-slide-1:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-1::after,
-#beach-carousel-slide-2:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-2::after,
-#beach-carousel-slide-3:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-3::after,
-#beach-carousel-slide-4:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-4::after,
-#beach-carousel-slide-5:checked
-  ~ .carousel-mobile
-  .carousel-dot-mobile-5::after {
+#beach-carousel-slide-1:checked~.carousel-mobile .carousel-dot-mobile-1::before,
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel-dot-mobile-2::before,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel-dot-mobile-3::before,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel-dot-mobile-4::before,
+#beach-carousel-slide-5:checked~.carousel-mobile .carousel-dot-mobile-5::before,
+#beach-carousel-slide-1:checked~.carousel-mobile .carousel-dot-mobile-1::after,
+#beach-carousel-slide-2:checked~.carousel-mobile .carousel-dot-mobile-2::after,
+#beach-carousel-slide-3:checked~.carousel-mobile .carousel-dot-mobile-3::after,
+#beach-carousel-slide-4:checked~.carousel-mobile .carousel-dot-mobile-4::after,
+#beach-carousel-slide-5:checked~.carousel-mobile .carousel-dot-mobile-5::after {
   opacity: 0;
   animation-name: none;
 }
@@ -626,29 +580,29 @@
     height: 272px;
   }
 
-  #beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img1-mobile,
-  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img2-mobile,
-  #beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img3-mobile,
-  #beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img4-mobile {
+  #beach-carousel-slide-2:checked~.carousel-mobile .carousel_img1-mobile,
+  #beach-carousel-slide-3:checked~.carousel-mobile .carousel_img2-mobile,
+  #beach-carousel-slide-4:checked~.carousel-mobile .carousel_img3-mobile,
+  #beach-carousel-slide-5:checked~.carousel-mobile .carousel_img4-mobile {
     transform: translateX(-146px) rotateY(45deg) scale(0.74);
   }
 
-  #beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img2-mobile,
-  #beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img3-mobile,
-  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img4-mobile,
-  #beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img5-mobile {
+  #beach-carousel-slide-1:checked~.carousel-mobile .carousel_img2-mobile,
+  #beach-carousel-slide-2:checked~.carousel-mobile .carousel_img3-mobile,
+  #beach-carousel-slide-3:checked~.carousel-mobile .carousel_img4-mobile,
+  #beach-carousel-slide-4:checked~.carousel-mobile .carousel_img5-mobile {
     transform: translateX(146px) rotateY(-45deg) scale(0.74);
   }
 
-  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img1-mobile,
-  #beach-carousel-slide-4:checked ~ .carousel-mobile .carousel_img2-mobile,
-  #beach-carousel-slide-5:checked ~ .carousel-mobile .carousel_img3-mobile {
+  #beach-carousel-slide-3:checked~.carousel-mobile .carousel_img1-mobile,
+  #beach-carousel-slide-4:checked~.carousel-mobile .carousel_img2-mobile,
+  #beach-carousel-slide-5:checked~.carousel-mobile .carousel_img3-mobile {
     transform: translateX(-224px) rotateY(0deg) scale(0.68);
   }
 
-  #beach-carousel-slide-1:checked ~ .carousel-mobile .carousel_img3-mobile,
-  #beach-carousel-slide-2:checked ~ .carousel-mobile .carousel_img4-mobile,
-  #beach-carousel-slide-3:checked ~ .carousel-mobile .carousel_img5-mobile {
+  #beach-carousel-slide-1:checked~.carousel-mobile .carousel_img3-mobile,
+  #beach-carousel-slide-2:checked~.carousel-mobile .carousel_img4-mobile,
+  #beach-carousel-slide-3:checked~.carousel-mobile .carousel_img5-mobile {
     transform: translateX(224px) rotateY(0deg) scale(0.68);
   }
 
@@ -660,6 +614,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .carousel-section-mobile .carousel_element-mobile,
   .carousel-section-mobile .carousel-dot-mobile,
   .carousel-section-mobile .carousel-dot-mobile::after,
@@ -689,7 +644,6 @@
 
   .carousel-section,
   .final-text-section,
-  .protip-section,
   .text-section--introduction {
     margin-bottom: 32px;
   }
