@@ -1579,9 +1579,6 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 1441px) {
-    .hero-section {
-        height: 700px;
-    }
 
     @keyframes vorhangZiehtNachLinks {
         0% {
@@ -1614,6 +1611,10 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 1900px) {
+    .hero-section {
+        height: 700px;
+    }
+
     .siegel-wrapper {
         left: -45%;
         bottom: -55%;
