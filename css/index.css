@@ -129,8 +129,8 @@
     z-index: 6;
     opacity: 0;
 
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 180px;
 
     animation: siegelEinfliegen 1.0s ease-out 3.5s forwards;
 }
@@ -372,7 +372,7 @@ form {
     flex-direction: column;
     text-align: center;
     gap: 24px;
-    padding: 0 60px;
+    /* padding: 0 60px; */
 }
 
 .contact-text-headline {
@@ -728,7 +728,128 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px) {
+    .hero-section {
+        justify-content: flex-start;
+    }
 
+    .hero-section::before {
+        background-image: url(../assets/images/index/hero-mobile.png);
+
+        animation: hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards;
+    }
+
+    .text-block {
+        max-width: 250px;
+        padding-top: 15px;
+        padding-left: 18px;
+        opacity: 1;
+
+        animation: textAusblendenMobile 0.3s ease-out 3.1s forwards;
+    }
+
+    .text-block h1 {
+        font-size: 40px;
+
+        margin-bottom: 16px;
+
+        animation: textEinblendenMobile 0.5s ease-in-out 1.0s forwards;
+    }
+
+    .text-block p {
+        font-size: 20px;
+
+        opacity: 0;
+
+        animation: textEinblendenMobile 0.5s ease-in-out 1.0s forwards;
+    }
+
+    .siegel-wrapper {
+        left: 25%;
+        bottom: 40%;
+
+        width: 160px;
+        height: 160px;
+
+        animation: siegelEinblenen 0.5s ease-out 3.4s forwards;
+    }
+
+    .layer-2 {
+        background-image: url('../assets/images/index/yellow-curtain-mobile.svg');
+        background-size: cover;
+
+        animation:
+            vorhangEinblenden 0.15s ease-in-out 1.4s forwards,
+            vorhangZiehtNachLinksMobile 0.8s ease-out 2.2s forwards,
+            vorhangZiehtNachOben 0.8s ease-out 3.4s forwards;
+    }
+
+    .layer-3 {
+        background-image: url('../assets/images/index/yellow-curtain-mobile.svg');
+
+        animation: none;
+    }
+
+    @keyframes textEinblendenMobile {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes textAusblendenMobile {
+        0% {
+            opacity: 1;
+        }
+
+        100% {
+            opacity: 0;
+        }
+    }
+
+    @keyframes siegelEinblenen {
+        0% {
+            opacity: 0;
+            transform: scale(0.5);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    @keyframes vorhangZiehtNachLinksMobile {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-9%);
+        }
+    }
+
+    @keyframes hintergrundNachLinksMobile {
+        0% {
+            transform: scale(1.15) translateX(0);
+        }
+
+        100% {
+            transform: scale(1.15) translateX(-20px);
+        }
+    }
+
+    @keyframes vorhangZiehtNachOben {
+        0% {
+            transform: translateX(-10%) translateY(0) scale(1);
+        }
+
+        100% {
+            transform: translateX(-25%) translateY(-20%) scale(0.7);
+        }
+    }
 
     .contact-form {
         padding: 80px 0px;
@@ -1204,14 +1325,14 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     }
 }
 
-@media screen and (max-width: 1441px) {
+@media screen and (min-width: 1441px) {
     .hero-section {
         height: 915px;
     }
 
     .siegel-wrapper {
-        left: -5%;
-        bottom: -50%;
+        left: -45%;
+        bottom: -55%;
     }
 
     @keyframes vorhangZiehtNachLinks {
