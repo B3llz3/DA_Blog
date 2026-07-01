@@ -735,7 +735,9 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     .hero-section::before {
         background-image: url(../assets/images/index/hero-mobile.png);
 
-        animation: hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards;
+        animation:
+            hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards,
+            hintergrundZoomMobile 0.8s ease-out 3.4s forwards;
     }
 
     .text-block {
@@ -848,6 +850,16 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
         100% {
             transform: translateX(-25%) translateY(-20%) scale(0.7);
+        }
+    }
+
+    @keyframes hintergrundZoomMobile {
+        0% {
+            transform: scale(1.15) translateX(-20px);
+        }
+
+        100% {
+            transform: scale(1.25) translateX(-20px);
         }
     }
 
@@ -986,6 +998,68 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 500px) and (max-width: 767px) {
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-section::before {
+        background-image: url(../assets/images/index/hero.png);
+
+        animation:
+            hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards,
+            hintergrundZoomMobile2 0.8s ease-out 3.4s forwards;
+    }
+
+    .text-block {
+        animation: textZiehtNachLinks 1.3s ease-out 2.2s forwards;
+    }
+
+    .layer-2 {
+        background-image: url('../assets/images/index/yellow-curtain-2.svg');
+        background-size: auto 100%;
+        width: 120%;
+
+        animation:
+            vorhangEinblenden 0.15s ease-in-out 2.0s forwards,
+            vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
+            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
+    }
+
+    .layer-3 {
+        background-image: url('../assets/images/index/yellow-curtain-3.svg');
+
+        animation:
+            vorhangEinblenden 0.9s ease-in-out 3.1s forwards,
+            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
+    }
+
+    .siegel-wrapper {
+        left: 15%;
+        bottom: -45%;
+
+        animation: siegelEinfliegen 1.0s ease-out 3.5s forwards;
+    }
+
+    @keyframes textZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-85%);
+        }
+    }
+
+    @keyframes hintergrundZoomMobile2 {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
     .highlights-text h1 {
         font-size: 42px;
     }
@@ -1060,6 +1134,80 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-section::before {
+        background-image: url(../assets/images/index/hero.png);
+
+        animation:
+            hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards,
+            hintergrundZoomMobile2 0.8s ease-out 3.4s forwards;
+    }
+
+    .text-block {
+        padding-left: 32px;
+        animation: textZiehtNachLinks 1.3s ease-out 2.2s forwards;
+    }
+
+    .text-block h1 {
+        font-size: 52px;
+
+        margin-bottom: 16px;
+
+    }
+
+    .text-block p {
+        font-size: 32px;
+    }
+
+    .layer-2 {
+        background-image: url('../assets/images/index/yellow-curtain-2.svg');
+        background-size: auto 100%;
+        width: 120%;
+
+        animation:
+            vorhangEinblenden 0.15s ease-in-out 2.0s forwards,
+            vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
+            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
+    }
+
+    .layer-3 {
+        background-image: url('../assets/images/index/yellow-curtain-3.svg');
+
+        animation:
+            vorhangEinblenden 0.9s ease-in-out 3.1s forwards,
+            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
+    }
+
+    .siegel-wrapper {
+        left: 15%;
+        bottom: -35%;
+
+        animation: siegelEinfliegen 1.0s ease-out 3.5s forwards;
+    }
+
+    @keyframes textZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-85%);
+        }
+    }
+
+    @keyframes hintergrundZoomMobile2 {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
     .highlights-text h1 {
         font-size: 48px;
     }
@@ -1176,6 +1324,80 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 900px) and (max-width: 1023px) {
+    .hero-section {
+        justify-content: center;
+    }
+
+    .hero-section::before {
+        background-image: url(../assets/images/index/hero.png);
+
+        animation:
+            hintergrundNachLinksMobile 0.8s ease-out 2.2s forwards,
+            hintergrundZoomMobile2 0.8s ease-out 3.4s forwards;
+    }
+
+    .text-block {
+        padding-left: 32px;
+        animation: textZiehtNachLinks 1.3s ease-out 2.2s forwards;
+    }
+
+    .text-block h1 {
+        font-size: 52px;
+
+        margin-bottom: 16px;
+
+    }
+
+    .text-block p {
+        font-size: 32px;
+    }
+
+    .layer-2 {
+        background-image: url('../assets/images/index/yellow-curtain-2.svg');
+        background-size: auto 100%;
+        width: 120%;
+
+        animation:
+            vorhangEinblenden 0.15s ease-in-out 2.0s forwards,
+            vorhangAusblenden 1.0s ease-in-out 3.5s forwards,
+            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
+    }
+
+    .layer-3 {
+        background-image: url('../assets/images/index/yellow-curtain-3.svg');
+
+        animation:
+            vorhangEinblenden 0.9s ease-in-out 3.1s forwards,
+            vorhangZiehtNachLinks 2.3s ease-out 2.2s forwards;
+    }
+
+    .siegel-wrapper {
+        left: 15%;
+        bottom: -25%;
+
+        animation: siegelEinfliegen 1.0s ease-out 3.5s forwards;
+    }
+
+    @keyframes textZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-85%);
+        }
+    }
+
+    @keyframes hintergrundZoomMobile2 {
+        0% {
+            transform: translateY(0px);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
     .highlights-text h1 {
         font-size: 52px;
     }
@@ -1250,6 +1472,49 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
 /* wide-screen */
 @media screen and (min-width: 1024px) and (max-width: 1299px) {
+    .text-block h1 {
+        font-size: 52px;
+
+        margin-bottom: 16px;
+
+    }
+
+    .text-block p {
+        font-size: 28px;
+    }
+
+    .siegel-wrapper {
+        left: 5%;
+        bottom: -35%;
+    }
+
+    @keyframes vorhangZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-18%);
+        }
+
+        60% {
+            transform: translateX(-18%);
+        }
+
+        100% {
+            transform: translateX(-22%);
+        }
+    }
+
+    @keyframes textZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-95%);
+        }
+    }
 
     .highlights-rocket {
         padding-bottom: 32px;
@@ -1327,11 +1592,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
 @media screen and (min-width: 1441px) {
     .hero-section {
-        height: 915px;
+        height: 700px;
     }
 
     .siegel-wrapper {
-        left: -45%;
+        left: -40%;
         bottom: -55%;
     }
 
@@ -1350,6 +1615,16 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 
         100% {
             transform: translateX(-25%);
+        }
+    }
+
+    @keyframes hintergrundNachOben {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-30px);
         }
     }
 
