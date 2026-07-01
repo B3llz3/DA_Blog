@@ -88,7 +88,6 @@ Danach ist die Seite unter `http://localhost:5500` erreichbar.
 
 - Das Kontaktformular besitzt aktuell keine Formularverarbeitung.
 - Der Link `Cookie Preferences` ist derzeit ein Platzhalter.
-- In der Sticky-Footbar wird auf `#highlight` verlinkt, die eigentliche Section-ID auf der Startseite lautet jedoch `#highlights`.
 - `article2.html` referenziert `css/header.css` und `css/footer.css`; diese Dateien sind im aktuellen Projektstand nicht vorhanden.
 - Die Bildstruktur von Artikel 2 verwendet den Ordnernamen `assets/images/articel2/`.
 

@@ -3,18 +3,16 @@
 @import url("./layout.css");
 @import url("./font.css");
 
-.video-section {
+.video {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 88px;
+
+    padding: 10px 135px 88px;
 }
 
-.video-section iframe {
+iframe {
     border-radius: 30px;
     height: 520px;
-    width: 930px;
 }
 
 .carousel-section {
@@ -98,8 +96,8 @@
 .carousel-section .carousel {
     width: min(92vw, 1300px);
     height: clamp(240px, 34vw, 440px);
-    padding-left: clamp(16px, 6vw, 100px);
-    padding-right: clamp(16px, 6vw, 100px);
+    /* padding-left: clamp(16px, 6vw, 100px);
+    padding-right: clamp(16px, 6vw, 100px); */
 }
 
 .carousel-section .carousel_element {
@@ -678,15 +676,15 @@
     }
 
     @media screen and (min-width: 992px) and (max-width: 1028px) {
-        .video-section {
+        .video {
             padding: 20px 30px;
         }
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
-    .video-section {
-        padding: 20px 50px;
+    .video {
+        padding: 20px 15px;
     }
 }
 
@@ -716,11 +714,11 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .video-section {
-        padding: 0px 15px 54px;
+    .video {
+        padding: 0px 15px 24px;
     }
 
-    .video-section iframe {
+    iframe {
         height: 190px;
         width: auto;
     }
