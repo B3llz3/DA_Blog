@@ -412,7 +412,7 @@ form {
   text-align: center;
 }
 
-.contact-text-headline > h2 > br {
+.contact-text-headline>h2>br {
   display: none;
 }
 
@@ -471,7 +471,7 @@ label {
   padding-top: 15px;
 }
 
-.checkbox-row > p {
+.checkbox-row>p {
   font-size: 15px;
 }
 
@@ -500,8 +500,8 @@ input[type="text"] {
 textarea {
   color: rgba(78, 164, 135, 1);
   width: 100%;
-  padding: 3px 12px;
-  margin-bottom: 8px 0;
+  padding: 16px 0px 12px 0px;
+  margin: 8px 0;
   border: none;
   border-bottom: 2px solid rgba(84, 55, 13, 1);
   box-sizing: border-box;
@@ -549,11 +549,11 @@ input[type="checkbox"] {
   justify-content: center;
 }
 
-input[type="checkbox"]:hover ~ .cb-box {
+input[type="checkbox"]:hover~.cb-box {
   background: rgba(241, 201, 83, 1);
 }
 
-input[type="checkbox"]:checked ~ .cb-box {
+input[type="checkbox"]:checked~.cb-box {
   background: rgba(78, 164, 135, 1);
   border-color: rgba(78, 164, 135, 1);
 }
@@ -569,7 +569,7 @@ input[type="checkbox"]:checked ~ .cb-box {
   transform: rotate(45deg);
 }
 
-input[type="checkbox"]:checked ~ .cb-box::after {
+input[type="checkbox"]:checked~.cb-box::after {
   border-color: rgba(241, 201, 83, 1);
 }
 
@@ -719,20 +719,20 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 /* aktiver gelber Punkt */
-#slide1:checked ~ .dots label:nth-child(1),
-#slide2:checked ~ .dots label:nth-child(2),
-#slide3:checked ~ .dots label:nth-child(3),
-#slide4:checked ~ .dots label:nth-child(4) {
+#slide1:checked~.dots label:nth-child(1),
+#slide2:checked~.dots label:nth-child(2),
+#slide3:checked~.dots label:nth-child(3),
+#slide4:checked~.dots label:nth-child(4) {
   background: #f4c542;
   width: 40px;
   border-radius: 20px;
 }
 
 /* passendes Bild + Text anzeigen */
-#slide1:checked ~ .slides .s1,
-#slide2:checked ~ .slides .s2,
-#slide3:checked ~ .slides .s3,
-#slide4:checked ~ .slides .s4 {
+#slide1:checked~.slides .s1,
+#slide2:checked~.slides .s2,
+#slide3:checked~.slides .s3,
+#slide4:checked~.slides .s4 {
   opacity: 1;
   pointer-events: auto;
   z-index: 2;
@@ -881,15 +881,15 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     padding: 80px 0px;
   }
 
-  .contact-text > h2 {
+  .contact-text>h2 {
     font-size: 40px;
   }
 
-  .contact-text-headline > h2 > br {
+  .contact-text-headline>h2>br {
     display: inherit;
   }
 
-  .contact-text > p {
+  .contact-text>p {
     font-size: 24px;
     display: none;
   }
@@ -907,7 +907,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     flex-direction: column;
   }
 
-  .form-row-checkbox > label {
+  .form-row-checkbox>label {
     font-size: 15px;
   }
 
@@ -1266,11 +1266,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     padding: 80px 0px;
   }
 
-  .contact-text > h2 {
+  .contact-text>h2 {
     font-size: 40px;
   }
 
-  .contact-text > p {
+  .contact-text>p {
     font-size: 24px;
   }
 
@@ -1287,7 +1287,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     flex-direction: column;
   }
 
-  .form-row-checkbox > label {
+  .form-row-checkbox>label {
     font-size: 24px;
   }
 
