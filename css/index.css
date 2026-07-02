@@ -522,7 +522,6 @@ input[type="checkbox"] {
 }
 
 .checkbox-column {
-  width: 540px;
   display: flex;
   flex-direction: column;
   padding-top: 16px;
