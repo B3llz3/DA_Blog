@@ -6,6 +6,7 @@ Statisches Frontend-Projekt der Developer Akademie. Die Website bildet einen meh
 
 Die Startseite kombiniert eine Hero-Section, einen Highlights-Slider, einen FAQ-Bereich und ein Kontaktformular. Von dort aus gelangt man auf vier eigenständige Artikelseiten zu verschiedenen Reisezielen:
 
+- `index.html`: Landingpage
 - `article1.html`: Strände der Welt
 - `article2.html`: Kopenhagen in 3 Tagen
 - `article3.html`: Pattaya Pulse
