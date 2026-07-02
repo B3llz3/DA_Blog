@@ -88,7 +88,6 @@ Danach ist die Seite unter `http://localhost:5500` erreichbar.
 
 - Das Kontaktformular besitzt aktuell keine Formularverarbeitung.
 - Der Link `Cookie Preferences` ist derzeit ein Platzhalter.
-- `article2.html` referenziert `css/header.css` und `css/footer.css`; diese Dateien sind im aktuellen Projektstand nicht vorhanden.
 - Die Bildstruktur von Artikel 2 verwendet den Ordnernamen `assets/images/articel2/`.
 
 ## Team
