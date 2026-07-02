@@ -1638,3 +1638,32 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
         }
     }
 }
+
+@media screen and (min-width: 2600px) {
+    .hero-section {
+        height: 1000px;
+    }
+
+    .siegel-wrapper {
+        left: -50%;
+        bottom: -75%;
+    }
+
+    @keyframes vorhangZiehtNachLinks {
+        0% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-16%);
+        }
+
+        60% {
+            transform: translateX(-16%);
+        }
+
+        100% {
+            transform: translateX(-20%);
+        }
+    }
+}
