@@ -1579,7 +1579,6 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1899px) {
-
   .siegel-wrapper {
     left: -25%;
     bottom: -55%;
@@ -1677,5 +1676,11 @@ form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
     100% {
       transform: translateX(-20%);
     }
+  }
+}
+
+@media screen and (min-width: 3300px) {
+  .hero-section {
+    height: 1100px;
   }
 }
