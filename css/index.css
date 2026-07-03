@@ -459,6 +459,7 @@ label {
   color: rgba(185, 16, 47, 1);
   padding-left: 8px;
   padding-top: 8px;
+  visibility: hidden;
 }
 
 .form-row-checkbox {
@@ -519,6 +520,11 @@ textarea:focus {
 
 input[type="checkbox"] {
   display: none;
+}
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .checkbox-column {
@@ -588,10 +594,6 @@ input[type="submit"] {
   align-self: center;
 }
 
-form:has(input[type="checkbox"]:checked) .error {
-  color: white;
-}
-
 form:has(input[type="checkbox"]:checked) input[type="submit"] {
   background-color: rgba(78, 164, 135, 1);
   color: rgba(241, 201, 83, 1);
@@ -599,6 +601,9 @@ form:has(input[type="checkbox"]:checked) input[type="submit"] {
 
 form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+form:has(input[type="checkbox"]:user-invalid) .error {
+  visibility: visible;
 }
 
 .highlights {
