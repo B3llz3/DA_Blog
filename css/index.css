@@ -519,9 +519,6 @@ textarea:focus {
 }
 
 input[type="checkbox"] {
-  display: none;
-}
-input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
