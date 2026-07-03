@@ -6,6 +6,7 @@ Statisches Frontend-Projekt der Developer Akademie. Die Website bildet einen meh
 
 Die Startseite kombiniert eine Hero-Section, einen Highlights-Slider, einen FAQ-Bereich und ein Kontaktformular. Von dort aus gelangt man auf vier eigenständige Artikelseiten zu verschiedenen Reisezielen:
 
+- `index.html`: Landingpage
 - `article1.html`: Strände der Welt
 - `article2.html`: Kopenhagen in 3 Tagen
 - `article3.html`: Pattaya Pulse
@@ -88,7 +89,6 @@ Danach ist die Seite unter `http://localhost:5500` erreichbar.
 
 - Das Kontaktformular besitzt aktuell keine Formularverarbeitung.
 - Der Link `Cookie Preferences` ist derzeit ein Platzhalter.
-- `article2.html` referenziert `css/header.css` und `css/footer.css`; diese Dateien sind im aktuellen Projektstand nicht vorhanden.
 - Die Bildstruktur von Artikel 2 verwendet den Ordnernamen `assets/images/articel2/`.
 
 ## Team

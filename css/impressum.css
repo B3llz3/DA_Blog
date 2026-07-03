@@ -1,12 +1,13 @@
 @import url("./variables.css");
 
 .impressum-section {
-  margin-top: 80px;
+  min-height: calc(100vh - 256px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: start;
   gap: 16px;
+  padding-bottom: 88px;
+  font-family: Palanquin;
 }
 
 .impressum--contakt {
@@ -14,12 +15,14 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 16px;
+  font-family: Palanquin;
 }
 
 .impressum--contakt a {
   text-decoration: none;
   color: var(--primary-braun);
   font-size: 16px;
+
 }
 
 .impressum--contakt a:hover {
