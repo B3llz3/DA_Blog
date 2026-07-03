@@ -495,7 +495,7 @@ input[type="text"] {
   display: flex;
   gap: 65px;
   font-size: 24px;
-  font-family: "Palaquin";
+  font-family: "Palanquin";
 }
 
 textarea {
@@ -509,7 +509,7 @@ textarea {
   display: flex;
   gap: 65px;
   font-size: 24px;
-  font-family: "Palaquin";
+  font-family: "Palanquin";
 }
 
 input[type="text"],
@@ -519,9 +519,7 @@ textarea:focus {
 }
 
 input[type="checkbox"] {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
+  display: none;
 }
 
 .checkbox-column {
@@ -599,6 +597,7 @@ form:has(input[type="checkbox"]:checked) input[type="submit"] {
 form:has(input[type="checkbox"]:checked) input[type="submit"]:hover {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
 }
+
 form:has(input[type="checkbox"]:user-invalid) .error {
   visibility: visible;
 }
